@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <h2>Bienvenidos a SGOA! <span class="icon-emo-happy"></span></h2>
+  <p class="lead">
+    Si tu ya tienes una cuenta <a href="">ingresa ya</a>. 
+    Si tu eres nuevo en este sistema empieza creando una 
+    <a href="{% url 'usuarios:est_signup' %}">cuenta de estudiante</a> o una <a href="{% url 'usuarios:pro_signup' %}">cuenta de profesor</a>.
+  </p>
+  <hr>
+  <h3>De que se trata el sistema...</h3>
+  <p>
+    Este sistema permite a estudiantes ver, descargar y opinar sobre los objetos de aprendizaje que los profesores han creado y los han subido a esta plataforma. <a href="{% static 'templades/informacionOA.html' %}">Saber mas</a>
+  </p>
+  <p>Nuestro proyecto es 100% software libre. <a href="https://github.com/Dayarenth/SistemaDeGestionDeObjetosDeAprendizaje.git">Visita nuestro repositorio en github</a></p>
+  
+{% endblock %}

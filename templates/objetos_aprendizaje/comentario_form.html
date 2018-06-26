@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{%block content %}
+
+<div class="row">
+            <div class="col-md-8 col-sm-10 col-12">
+<div class="form-group container">
+<form method="post" enctype="multipart/form-data">
+	{% csrf_token %}
+	{{ form|crispy }}
+	<button type="submit">Continuar</button>
+</form>
+</div>
+
+</div>
+
+
+
+
+		{% for co in comments %}
+		<br>
+		<div class="container">
+  				<h2><strong>Usuario: </strong> {{ co.autor.username }} </h2>
+  			<div class="card">
+    			<div class="card-header">{{ co.contenido }}</div>
+    			<div class="card-body">
+    				<img src="{{ co.fimg.url }}"/>
+    			</div> 
+    			<div class="card-footer"><strong>Publicado: </strong> {{ co.fecha_comentario }}</div>
+  			</div>
+		</div>
+
+		
+
+		{% endfor %}
+
+
+
+
+ {% if comments.has_other_pages %}
+  <ul class="pagination">
+    {% if comments.has_previous %}
+      <li><a href="?page={{ users.previous_page_number }}">&laquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&laquo;</span></li>
+    {% endif %}
+    {% for i in comments.paginator.page_range %}
+      {% if users.number == i %}
+        <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+      {% else %}
+        <li><a href="?page={{ i }}">{{ i }}</a></li>
+      {% endif %}
+    {% endfor %}
+    {% if comments.has_next %}
+      <li><a href="?page={{ users.next_page_number }}">&raquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&raquo;</span></li>
+    {% endif %}
+  </ul>
+{% endif %}
+
+
+{% endblock %}
+
+

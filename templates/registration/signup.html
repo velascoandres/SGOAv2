@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Registrate para tener una cuenta</h2>
+  <p class="lead">Selecciona el tipo de cuenta que quieres crear</p>
+  <a href="{% url 'usuarios:est_signup' %}" class="btn btn-student btn-lg" role="button">Soy estudiante</a>
+  <a href="{% url 'usuarios:pro_signup' %}" class="btn btn-teacher btn-lg" role="button">Soy profesor</a>
+{% endblock %}

@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+{% endblock %}
+
+{% block gestor %}
+{% endblock %}
+
+
+{% block header %}
+                
+
+            <div class="container">
+              <a>
+                  BIENVENIDO AL FORO
+              </a>
+            
+              
+          </div>
+{% endblock %}
+
+
+
+{%block table %}
+
+<style>
+.button {
+  border-radius: 4px;
+  background-color:#B22222;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+
+.transparent
+{ 
+   background:#7f7f7f;
+   background:rgba(0,0,0.2,0.5);
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+<div class="container p-3 mb-2 transparent">
+  <h1 style="color:white;"><strong>Participa en el foro</strong></h1>
+<div class="form-group p-3 mb-2 bg-dark text-white">
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form|crispy }}
+  <button type="submit" class="button"><span>Comentar</span></button>
+</form>
+</div>
+
+</div>
+
+<div id="datos" class="container p-3 mb-2 transparent">
+
+</div>
+
+
+
+{% endblock %}
+
+
+{% block sc %}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+
+  function inicio(){
+    var id = '{{ id_oa }}';
+    $.ajax({
+       data : {'id':id},
+       url : '/oa/api/comentarios',
+       type:'get',
+       success: function(data){
+        console.log(data);
+         var html="";
+         for (var i=0; i<data.length;i++){
+          cabecera='<h2 style="color:white;" ><strong>'+data[i].autor+'</strong></h2>'+
+                 '<div class="card"><div class="card-header p-3 mb-2 bg-dark text-white">'+data[i].contenido+'</div>';
+                 if (data[i].fimg){
+                    console.log(data[i].fimg)
+                    cabecera+='<div class="card-body"><img src="http://127.0.0.1:8000/media/'+data[i].fimg+'"class="img-responsive"/></div> ';
+                 }
+                 cabecera+=' <div class="card-footer p-3 mb-2 bg-info text-white"><strong>Publicado: </strong>'+data[i].fecha_comentario+'</div>';
+
+                 html+=cabecera+'</div>';
+         }
+         $('#datos').html(html);
+       }
+    })
+    
+  }  
+  window.onload=inicio;
+
+</script>
+{% endblock %}

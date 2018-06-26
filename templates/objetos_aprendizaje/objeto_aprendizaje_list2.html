@@ -1,0 +1,117 @@
+{%extends 'base.html' %}
+{% load static %}
+
+
+
+{% block header %}
+                
+
+            <div class="container">
+              <a>
+                  OBJETOS DE APRENDIZAJE
+              </a>
+            
+              
+          </div>
+{% endblock %}
+
+
+
+
+
+
+{% block gestor %}
+{% endblock %}
+
+
+{% block content %}
+
+{% endblock %}
+
+{% block table %}
+
+
+
+
+
+<table class="table table-dark">
+	<thead>
+		<tr>
+			<td>#</td>
+			<td>Nombre</td>
+			<td>Descripcion</td>
+			<td>Fecha creacion</td>
+			<td>Autor</td>
+			<td>Categoria</td>
+			<td>Acciones</td>
+			
+		</tr>		
+	</thead>
+	<tbody>
+		
+		{% if oas %}
+		{% for oa in oas %}
+		<tr>
+			<td>{{ oa.id }}</td>
+			<td>{{ oa.nombre }}</td>
+			<td>{{ oa.descripcion }}</td>
+			<td>{{ oa.fecha_creacion }}</td>
+			<td>{{ oa.profesor.nombre }}</td>
+			<td>{{ oa.categoria.nombre_cate }}</td>
+			<td>
+				<a id="p{{ oa.id }}" class="btn btn-primary" href="{% url 'objetos_aprendizaje:oa_ver' oa.id %}">
+					Visualizar
+				</a>
+				<a href="{% url 'objetos_aprendizaje:oa_ver' oa.id %}"></a>
+				{% if oa.profesor.user.id == user.id %}
+				<a class="btn btn-primary" href="{% url 'objetos_aprendizaje:oa_editar' oa.id %}">
+					Editar
+				</a>
+				{% endif %}
+				{% if user.is_superuser or oa.profesor.user.id == user.id %}
+				<a class="btn btn-danger" href="{% url 'objetos_aprendizaje:oa_eliminar' oa.id %}">
+					Eliminar
+				</a>
+				{% endif %}
+				<a class="btn btn-danger" href="{% url 'objetos_aprendizaje:oa_descargar' oa.id %}">
+					Descargar
+				</a>
+
+				<a href="{% url 'objetos_aprendizaje:comentario2_crear' oa.id %}">
+					Foro
+				</a>
+			</td>
+
+			
+		</tr>
+		{% endfor %}
+	
+		{% else %}
+		<h1>No hay registros de Objetos de aprendizaje</h1>
+		{% endif %}
+	</tbody>
+
+{% block sc %}
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+  <link href="{% static 'css/codegena.css' %}" rel="stylesheet">  
+
+  <script type="text/javascript">
+    $(function() {
+    		try{
+    			
+    			{% for oa in oas %}
+                $('#p{{ oa.id }}').miniPreview({ prefetch: 'parenthover' });
+                {% endfor %}
+    		}catch(err){
+             
+            }
+        }
+     );
+    		
+
+  </script> <script src="{% static 'js/codegena.js' %}"></script>
+ {% endblock %} 
+
+</table>
+{% endblock %}
+

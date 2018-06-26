@@ -1,0 +1,134 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}SGOA v2{% endblock %}</title>
+    <link rel="icon" href="{% static 'img/favicon.png' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/fontello-2f186091/css/fontello.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">
+      {% block estilo %}
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <link rel="stylesheet" type="text/css" href="{% static 'css/teachers.css' %}">
+      {% endblock %}
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Inicio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          SGOA
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% static 'templades/perfiles.html' %}">Grupo de desarollo</a>
+          <a class="dropdown-item" href="{% static 'templades/indices.html' %}">Ayuda</a>
+          <a class="dropdown-item" href="{% static 'templades/herramientas.html' %}">Herramientas</a>
+      </li>
+      {% if user.is_authenticated %}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          OA
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'objetos_aprendizaje:oa_listar' %}">Listar Todos</a>
+          <a class="dropdown-item" href="{% url 'objetos_aprendizaje:buscar' %}">Listar por Categoria</a>
+          <a class="dropdown-item" href="{% url 'objetos_aprendizaje:oa_listar_ajax' %}">Listar por Categoria AJAX</a>
+          {% if user.is_teacher %}
+          <a class="dropdown-item" href="{% url 'objetos_aprendizaje:oa_crear' %}">Crear</a>
+          {% endif %}
+          
+      </li>
+      {% endif %}
+      {% if user.is_superuser %}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Usuarios
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'usuarios:gestionPro' %}">Gestion Profesores</a>
+          
+          <a class="dropdown-item" href="{% url 'usuarios:gestionEst' %}">Gestion Estudiantes</a>
+        
+      </li>
+      {% endif %}
+      {% if user.is_teacher %}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Recursos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="http://exelearning.net/">ExeLearning</a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</nav>
+    <div class="container my-5">
+      <div class="row justify-content-left">
+        <div class="col-md-10 col-sm-12">
+          <div class="row">
+            <div class="col-6">
+              <h1 class="logo">
+                {% block header %}
+                <a href="">
+                  SGOA
+                  {% if user.is_authenticated %}
+                    {% if user.is_teacher %}
+                      <span class="icon-feather" data-toggle="tooltip" data-placement="right" title="Teacher profile"></span>
+                    {% else %}
+                      <span class="icon-graduation-cap" data-toggle="tooltip" data-placement="right" title="Student profile"></span>
+                    {% endif %}
+                  {% endif %}
+                </a>
+                {% endblock %}
+              </h1>
+            </div>
+            <div class="col-6 text-right">
+              {% if user.is_authenticated %}
+                <p class="pt-3">Logged in as <strong>{{ user.username }}</strong>. <a href="{% url 'usuarios:logout' %}">Log out</a>.</p>
+              {% else %}
+                <a href="{% url 'usuarios:login' %}" class="btn btn-light" role="button">Log in</a>
+                <a href="{% url 'usuarios:signup' %}" class="btn btn-primary" role="button">Sign up</a>
+              {% endif %}
+            </div>
+          </div>
+          {% block gestor %}
+            <div class="card">
+            <div class="card-body">
+                
+          </div>
+          
+        </div>
+          {% endblock %}
+
+          {% block content %}
+          {% endblock %}
+          
+        </div>
+      </div>
+    </div>
+<div class="container">
+              {% block table %}
+              {% endblock %}
+            
+              
+  </div>
+            
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    {% block sc %}
+    {% endblock %}
+  </body>
+</html>
