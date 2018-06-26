@@ -1,56 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<instance xmlns="http://www.exelearning.org/content/v0.3" reference="5" version="0.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemalocation="http://www.exelearning.org/content/v0.3 content.xsd" class="exe.engine.package.Package">
+<instance xmlns="http://www.exelearning.org/content/v0.3" reference="8" version="0.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemalocation="http://www.exelearning.org/content/v0.3 content.xsd" class="exe.engine.package.Package">
  <dictionary>
   <string role="key" value="_title"></string>
-  <unicode value=""></unicode>
+  <unicode value="Fundamentos del Software Libre"></unicode>
   <string role="key" value="idevices"></string>
   <list></list>
+  <string role="key" value="_author"></string>
+  <unicode value="Miguel Esteban Álvarez Naranjo"></unicode>
   <string role="key" value="_backgroundImg"></string>
   <unicode value=""></unicode>
   <string role="key" value="_contextMode"></string>
-  <unicode value=""></unicode>
+  <unicode value="presencial"></unicode>
   <string role="key" value="_contextPlace"></string>
-  <unicode value=""></unicode>
+  <unicode value="classroom"></unicode>
+  <string role="key" value="_description"></string>
+  <unicode value="Las 4 libertades del software libre.
+Historia.
+diferencias entre el software libre, el software propietario y el codigo abierto.
+Copyleft"></unicode>
   <string role="key" value="_docType"></string>
-  <string value="HTML5"></string>
+  <unicode value="HTML5"></unicode>
   <string role="key" value="_intendedEndUserRoleGroup"></string>
   <bool value="0"></bool>
   <string role="key" value="_intendedEndUserRoleTutor"></string>
   <bool value="0"></bool>
   <string role="key" value="_intendedEndUserRoleType"></string>
-  <unicode value=""></unicode>
+  <unicode value="learner"></unicode>
   <string role="key" value="_isChanged"></string>
-  <bool value="0"></bool>
+  <bool value="1"></bool>
   <string role="key" value="_lang"></string>
   <unicode value="es"></unicode>
   <string role="key" value="_learningResourceType"></string>
-  <unicode value=""></unicode>
+  <unicode value="guided reading"></unicode>
   <string role="key" value="_levelNames"></string>
   <list>
-   <unicode value="Topic"></unicode>
-   <unicode value="Section"></unicode>
-   <unicode value="Unit"></unicode>
+   <unicode value="Tema"></unicode>
+   <unicode value="Sección"></unicode>
+   <unicode value="Unidad"></unicode>
   </list>
   <string role="key" value="_name"></string>
-  <unicode value="refactorizacion"></unicode>
+  <unicode value="FundamentosSFL_exelearning_Miguel_Alvarez"></unicode>
   <string role="key" value="_nextIdeviceId"></string>
-  <int value="4"></int>
+  <int value="17"></int>
   <string role="key" value="_nextNodeId"></string>
-  <int value="1"></int>
+  <int value="3"></int>
   <string role="key" value="_nodeIdDict"></string>
   <dictionary>
    <unicode role="key" value="0"></unicode>
    <instance class="exe.engine.node.Node" reference="3">
     <dictionary>
      <string role="key" value="_title"></string>
-     <unicode value="Inicio"></unicode>
+     <unicode value="Fundamentos del Software Libre"></unicode>
      <string role="key" value="idevices"></string>
      <list>
       <instance class="exe.engine.genericidevice.GenericIdevice" reference="1">
        <dictionary>
         <string role="key" value="_title"></string>
-        <unicode value="REFACTORIZAR: PAGAR LA DEUDA TÉCNICA"></unicode>
+        <unicode value="Objectives"></unicode>
         <string role="key" value="_author"></string>
         <unicode value="University of Auckland"></unicode>
         <string role="key" value="_purpose"></string>
@@ -72,7 +79,7 @@ learning tasks."></unicode>
          <instance class="exe.engine.field.TextAreaField" reference="2">
           <dictionary>
            <string role="key" value="_id"></string>
-           <unicode value="105_2"></unicode>
+           <unicode value="42_2"></unicode>
            <string role="key" value="_idevice"></string>
            <reference key="1"></reference>
            <string role="key" value="_instruc"></string>
@@ -84,10 +91,11 @@ learning tasks."></unicode>
            <string role="key" value="anchors_linked_from_fields"></string>
            <dictionary></dictionary>
            <string role="key" value="content_w_resourcePaths"></string>
-           <unicode content="true" value="&lt;p&gt;Objetivos:&lt;/p&gt;
-&lt;p&gt;Definir ¿Que es la deuda tecnica?&lt;/p&gt;
-&lt;p&gt;Determinar los casos donde aplica el concepto de &quot;Deuda Tecnica&quot;&lt;/p&gt;
-&lt;p&gt;Definir ¿Que es la refactorizacion?&lt;/p&gt;"></unicode>
+           <unicode content="true" value="&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Conocer los fundamentos del Software Libre.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diferenciar el software libre del software propietario y del código abierto.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Entender la utilidad del copyleft.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;"></unicode>
            <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
            <int value="4"></int>
            <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
@@ -110,7 +118,7 @@ learning tasks."></unicode>
            <string role="key" value="nextImageId"></string>
            <int value="0"></int>
            <string role="key" value="parentNode"></string>
-           <reference key="3"></reference>
+           <none></none>
           </dictionary>
          </instance>
         </list>
@@ -154,7 +162,7 @@ delivered."></unicode>
         <string role="key" value="childs"></string>
         <list></list>
         <string role="key" value="content"></string>
-        <instance class="exe.engine.field.TextAreaField" reference="6">
+        <instance class="exe.engine.field.TextAreaField" reference="5">
          <dictionary>
           <string role="key" value="_id"></string>
           <int value="86"></int>
@@ -171,21 +179,11 @@ text through the text editing buttons associated with the field."></unicode>
           <string role="key" value="anchors_linked_from_fields"></string>
           <dictionary></dictionary>
           <string role="key" value="content_w_resourcePaths"></string>
-          <unicode content="true" value="&lt;p&gt;Al igual que una casa con una hipoteca, el software tiene deudas que deben pagarse.&lt;/p&gt;
-&lt;p&gt;Por ejemplo: un cliente para el que desarrolló una aplicación, le llama para incorporar nuevas funcionalidades. Luego de la negociación ud empieza a trabajar. El código de su sistema está en varios computadores, por lo que cada cambio debe replicarlo en todas ellas. Además, el código base es muy difícil de entenderlo, y el programador que lo hizo ya no trabaja en su empresa. Sin embargo, ese código puso su empresa en producción y hay que mantenerlo. para hacer esto bien, usted va a necesitar varios días para limpiar el código base existente antes de comenzar a agregar las nuevas funcionalidades.&lt;/p&gt;
-&lt;p&gt;Deuda técnica es la acumulación continua de atajos, cortes, duplicación y otros pecados que regularmente cometemos en contra de nuestro código base para ser más rápidos y cumplir el cronograma. Puede tomar muchas formas (código de espagueti, complejidad excesiva, duplicación y descuido general). Cada transgresión contra el código inicialmente puede parecer pequeña o insignificante. Pero como todas las formas de deuda, es el efecto acumulativo que se da en el tiempo el que duele.&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;resources/deuda.png&quot; alt=&quot;cuadro deuda tecnica&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;696&quot; height=&quot;533&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;¿Qué es la refactorización?&lt;/p&gt;
-&lt;p&gt;Refactorización es la práctica de hacer continuamente pequeños, incrementales mejoras en el diseño de su software sin cambiar el comportamiento externo.&lt;/p&gt;
-&lt;p&gt;Es una manera de pagar sistemáticamente nuestra deuda técnica a medida que avanzamos.&lt;/p&gt;
-&lt;p&gt;Es una manera de mejorar y mantener la integridad y el diseño de nuestro software que nos permita alcanzar los objetivos de hoy y estar en una buena posición para manejar los desafíos aún desconocidos del mañana.&lt;/p&gt;
-&lt;p&gt;Cuando se refactoriza un código, no se agrega nueva funcionalidad ni se corrige errores, se mejora la comprensibilidad del código&lt;br /&gt; haciéndole más fácil de comprender y más susceptible de cambios.&lt;/p&gt;
-&lt;p&gt;Cada vez que se cambia el nombre de un método o variable mal nombrados en un esfuerzo por hacer que sea más fácil de leer y entender, se está refactorizando. Ejemplo:&lt;/p&gt;
-&lt;p&gt;decimal sal; à decimal salario; [Renombrar variable]&lt;/p&gt;
-&lt;p&gt;public decimal Calc()  àpublic decimal CalcularImpuestoTotal() [Renombrar método]&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;resources/refac.png&quot; alt=&quot;refactorizacion&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;881&quot; height=&quot;545&quot; /&gt;&lt;/p&gt;"></unicode>
+          <unicode content="true" value="&lt;h1 style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;¿Qué es el Software Libre?&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;“Software libre” es el software que respeta la libertad de los usuarios y la comunidad. A grandes rasgos, significa que los usuarios tienen la libertad de ejecutar, copiar, distribuir, estudiar, modificar y mejorar el software. Es decir, el «software libre» es una cuestión de libertad, no de precio. Para entender el concepto, piense en «libre» como en &quot;libre expresión&quot;, no como en &quot;barra libre&quot;. En inglés, a veces en lugar de &quot;free software&quot; decimos «libre software», empleando ese adjetivo francés o español, derivado de «libertad», para mostrar que no queremos decir que el software es gratuito.&lt;/p&gt;
+&lt;p&gt;Promovemos estas libertades porque todos merecen tenerlas. Con estas libertades, los usuarios (tanto individualmente como en forma colectiva) controlan el programa y lo que este hace. Cuando los usuarios no controlan el programa, decimos que dicho programa «no es libre», o que es «privativo». Un programa que no es libre controla a los usuarios, y el programador controla el programa, con lo cual el programa resulta ser un instrumento de poder injusto.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.somoslibres.org/imagenes/maravillassl.jpg&quot; alt=&quot;software Libre&quot; title=&quot;Software Libre&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;250&quot; height=&quot;181&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;"></unicode>
           <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
           <int value="4"></int>
           <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
@@ -198,122 +196,17 @@ text through the text editing buttons associated with the field."></unicode>
           <instance class="exe.engine.galleryidevice.GalleryImages">
            <dictionary>
             <string role="key" value=".listitems"></string>
-            <list>
-             <instance class="exe.engine.galleryidevice.GalleryImage">
-              <dictionary>
-               <string role="key" value="_caption"></string>
-               <instance class="exe.engine.field.TextField">
-                <dictionary>
-                 <string role="key" value="_id"></string>
-                 <int value="215"></int>
-                 <string role="key" value="_idevice"></string>
-                 <none></none>
-                 <string role="key" value="_instruc"></string>
-                 <string value=""></string>
-                 <string role="key" value="_name"></string>
-                 <string value=""></string>
-                 <string role="key" value="content"></string>
-                 <string value=""></string>
-                 <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
-                 <int value="4"></int>
-                </dictionary>
-               </instance>
-               <string role="key" value="_id"></string>
-               <unicode value="1_86.2"></unicode>
-               <string role="key" value="_imageResource"></string>
-               <instance class="exe.engine.resource.Resource" reference="7">
-                <dictionary>
-                 <string role="key" value="_idevice"></string>
-                 <reference key="4"></reference>
-                 <string role="key" value="_package"></string>
-                 <reference key="5"></reference>
-                 <string role="key" value="_storageName"></string>
-                 <string value="deuda.png"></string>
-                 <string role="key" value="_userName"></string>
-                 <string value="c:\\users\\inkisi~1\\appdata\\local\\temp\\tmpxhmeaa\\deuda.png"></string>
-                 <string role="key" value="checksum"></string>
-                 <string value="de47e53d4aeac0ec27fae728d1fd0336"></string>
-                 <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
-                 <int value="2"></int>
-                 <string role="key" value="exe.engine.resource._Resource.persistenceVersion"></string>
-                 <int value="2"></int>
-                 <string role="key" value="warningMsg"></string>
-                 <string value=""></string>
-                </dictionary>
-               </instance>
-               <string role="key" value="_parent"></string>
-               <reference key="6"></reference>
-               <string role="key" value="_thumbnailResource"></string>
-               <none></none>
-               <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
-               <int value="3"></int>
-               <string role="key" value="makeThumbnail"></string>
-               <bool value="0"></bool>
-              </dictionary>
-             </instance>
-             <instance class="exe.engine.galleryidevice.GalleryImage">
-              <dictionary>
-               <string role="key" value="_caption"></string>
-               <instance class="exe.engine.field.TextField">
-                <dictionary>
-                 <string role="key" value="_id"></string>
-                 <int value="216"></int>
-                 <string role="key" value="_idevice"></string>
-                 <none></none>
-                 <string role="key" value="_instruc"></string>
-                 <string value=""></string>
-                 <string role="key" value="_name"></string>
-                 <string value=""></string>
-                 <string role="key" value="content"></string>
-                 <string value=""></string>
-                 <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
-                 <int value="4"></int>
-                </dictionary>
-               </instance>
-               <string role="key" value="_id"></string>
-               <unicode value="1_86.3"></unicode>
-               <string role="key" value="_imageResource"></string>
-               <instance class="exe.engine.resource.Resource" reference="8">
-                <dictionary>
-                 <string role="key" value="_idevice"></string>
-                 <reference key="4"></reference>
-                 <string role="key" value="_package"></string>
-                 <reference key="5"></reference>
-                 <string role="key" value="_storageName"></string>
-                 <string value="refac.png"></string>
-                 <string role="key" value="_userName"></string>
-                 <string value="c:\\users\\inkisi~1\\appdata\\local\\temp\\tmpxhmeaa\\refac.png"></string>
-                 <string role="key" value="checksum"></string>
-                 <string value="db6fbea6ea756946efadfc349ef7a041"></string>
-                 <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
-                 <int value="2"></int>
-                 <string role="key" value="exe.engine.resource._Resource.persistenceVersion"></string>
-                 <int value="2"></int>
-                 <string role="key" value="warningMsg"></string>
-                 <string value=""></string>
-                </dictionary>
-               </instance>
-               <string role="key" value="_parent"></string>
-               <reference key="6"></reference>
-               <string role="key" value="_thumbnailResource"></string>
-               <none></none>
-               <string role="key" value="exe.engine.galleryidevice.GalleryImage.persistenceVersion"></string>
-               <int value="3"></int>
-               <string role="key" value="makeThumbnail"></string>
-               <bool value="0"></bool>
-              </dictionary>
-             </instance>
-            </list>
+            <list></list>
             <string role="key" value="idevice"></string>
-            <reference key="6"></reference>
+            <reference key="5"></reference>
            </dictionary>
           </instance>
           <string role="key" value="intlinks_to_anchors"></string>
           <dictionary></dictionary>
           <string role="key" value="nextImageId"></string>
-          <int value="4"></int>
+          <int value="0"></int>
           <string role="key" value="parentNode"></string>
-          <reference key="3"></reference>
+          <none></none>
          </dictionary>
         </instance>
         <string role="key" value="edit"></string>
@@ -341,39 +234,83 @@ text through the text editing buttons associated with the field."></unicode>
         <string role="key" value="undo"></string>
         <bool value="1"></bool>
         <string role="key" value="userResources"></string>
-        <list>
-         <reference key="7"></reference>
-         <reference key="8"></reference>
-        </list>
+        <list></list>
         <string role="key" value="version"></string>
         <int value="0"></int>
        </dictionary>
       </instance>
-      <instance class="exe.engine.externalurlidevice.ExternalUrlIdevice">
+      <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="6">
        <dictionary>
         <string role="key" value="_title"></string>
-        <unicode value="External Web Site"></unicode>
+        <unicode value="Free Text"></unicode>
         <string role="key" value="_author"></string>
         <unicode value="University of Auckland"></unicode>
         <string role="key" value="_purpose"></string>
-        <unicode value="The external website iDevice loads an external website 
-into an inline frame in your eXe content rather then opening it in a popup box. 
-This means learners are not having to juggle windows. 
-This iDevice should only be used if your content 
-will be viewed by learners online."></unicode>
+        <unicode value="The majority of a learning resource will be 
+establishing context, delivering instructions and providing general information.
+This provides the framework within which the learning activities are built and 
+delivered."></unicode>
         <string role="key" value="_tip"></string>
         <string value=""></string>
-        <string role="key" value="_urlInstruc"></string>
-        <unicode value="Enter the URL you wish to display
-and select the size of the area to display it in."></unicode>
+        <string role="key" value="childs"></string>
+        <list></list>
+        <string role="key" value="content"></string>
+        <instance class="exe.engine.field.TextAreaField" reference="7">
+         <dictionary>
+          <string role="key" value="_id"></string>
+          <int value="86"></int>
+          <string role="key" value="_idevice"></string>
+          <reference key="6"></reference>
+          <string role="key" value="_instruc"></string>
+          <unicode value="Use this field to enter text. This 
+iDevice has no emphasis applied although limited formatting can be applied to 
+text through the text editing buttons associated with the field."></unicode>
+          <string role="key" value="_name"></string>
+          <unicode value="Free Text"></unicode>
+          <string role="key" value="anchor_names"></string>
+          <list></list>
+          <string role="key" value="anchors_linked_from_fields"></string>
+          <dictionary></dictionary>
+          <string role="key" value="content_w_resourcePaths"></string>
+          <unicode content="true" value="&lt;h1 style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Las 4 Libertades del Software Libre&lt;/strong&gt;&lt;/h1&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;&lt;em&gt;Libertad 0: &lt;/em&gt;&lt;/strong&gt;La libertad de ejecutar el programa como se desee, con cualquier propósito.&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;&lt;em&gt;Libertad 1: &lt;/em&gt;&lt;/strong&gt;La libertad de estudiar cómo funciona el programa, y cambiarlo para que haga lo que usted quiera. El acceso al código fuente es una condición necesaria para ello.&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;&lt;em&gt;Libertad 2: &lt;/em&gt;&lt;/strong&gt;La libertad de redistribuir copias para ayudar a otros.&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;&lt;em&gt;Libertad 3: &lt;/em&gt;&lt;/strong&gt;La libertad de distribuir copias de sus versiones modificadas a terceros. Esto le permite ofrecer a toda la comunidad la oportunidad de beneficiarse de las modificaciones. El acceso al código fuente es una condición necesaria para ello.&lt;a href=&quot;https://www.youtube.com/watch?v=RwuiI2laf2s&quot; title=&quot;Libertades del Software Libre&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;iframe width=&quot;560&quot; height=&quot;314&quot; src=&quot;//www.youtube.com/embed/RwuiI2laf2s&quot; allowfullscreen=&quot;allowfullscreen&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;"></unicode>
+          <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
+          <int value="4"></int>
+          <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
+          <int value="2"></int>
+          <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
+          <int value="3"></int>
+          <string role="key" value="htmlTag"></string>
+          <string value="div"></string>
+          <string role="key" value="images"></string>
+          <instance class="exe.engine.galleryidevice.GalleryImages">
+           <dictionary>
+            <string role="key" value=".listitems"></string>
+            <list></list>
+            <string role="key" value="idevice"></string>
+            <reference key="7"></reference>
+           </dictionary>
+          </instance>
+          <string role="key" value="intlinks_to_anchors"></string>
+          <dictionary></dictionary>
+          <string role="key" value="nextImageId"></string>
+          <int value="0"></int>
+          <string role="key" value="parentNode"></string>
+          <none></none>
+         </dictionary>
+        </instance>
         <string role="key" value="edit"></string>
         <bool value="0"></bool>
         <string role="key" value="emphasis"></string>
         <int value="0"></int>
-        <string role="key" value="exe.engine.externalurlidevice.ExternalUrlIdevice.persistenceVersion"></string>
-        <int value="3"></int>
-        <string role="key" value="height"></string>
-        <unicode value="300"></unicode>
+        <string role="key" value="exe.engine.freetextidevice.FreeTextIdevice.persistenceVersion"></string>
+        <int value="7"></int>
         <string role="key" value="icon"></string>
         <string value=""></string>
         <string role="key" value="id"></string>
@@ -382,94 +319,85 @@ and select the size of the area to display it in."></unicode>
         <bool value="0"></bool>
         <string role="key" value="originalicon"></string>
         <string value=""></string>
+        <string role="key" value="parent"></string>
+        <none></none>
         <string role="key" value="parentNode"></string>
         <reference key="3"></reference>
         <string role="key" value="systemResources"></string>
         <list></list>
+        <string role="key" value="type"></string>
+        <none></none>
         <string role="key" value="undo"></string>
         <bool value="1"></bool>
-        <string role="key" value="url"></string>
-        <unicode value="https://www.youtube.com/watch?v=NxqH3WggfQk"></unicode>
         <string role="key" value="userResources"></string>
         <list></list>
         <string role="key" value="version"></string>
         <int value="0"></int>
        </dictionary>
       </instance>
-      <instance class="exe.engine.casestudyidevice.CasestudyIdevice" reference="9">
+     </list>
+     <string role="key" value="_id"></string>
+     <unicode value="0"></unicode>
+     <string role="key" value="_package"></string>
+     <reference key="8"></reference>
+     <string role="key" value="anchor_fields"></string>
+     <list></list>
+     <string role="key" value="exe.engine.node.Node.persistenceVersion"></string>
+     <int value="2"></int>
+     <string role="key" value="exportType"></string>
+     <string value="website"></string>
+     <string role="key" value="last_full_node_path"></string>
+     <string value="exe-node:Fundamentos%20del%20Software%20Libre"></string>
+     <string role="key" value="parent"></string>
+     <none></none>
+     <string role="key" value="top_anchors_linked_from_fields"></string>
+     <list></list>
+     <string role="key" value="children"></string>
+     <list>
+      <instance class="exe.engine.node.Node" reference="11">
        <dictionary>
         <string role="key" value="_title"></string>
-        <unicode value="Case Study"></unicode>
-        <string role="key" value="_author"></string>
-        <unicode value="University of Auckland"></unicode>
-        <string role="key" value="_feedbackInstruc"></string>
-        <unicode value="Provide relevant feedback on the 
-situation."></unicode>
-        <string role="key" value="_purpose"></string>
-        <unicode value="A case study is a device that provides learners 
-with a simulation that has an educational basis. It takes a situation, generally 
-based in reality, and asks learners to demonstrate or describe what action they 
-would take to complete a task or resolve a situation. The case study allows 
-learners apply their own knowledge and experience to completing the tasks 
-assigned. when designing a case study consider the following:&lt;ul&gt; 
-&lt;li&gt;    What educational points are conveyed in the story&lt;/li&gt;
-&lt;li&gt;    What preparation will the learners need to do prior to working on the 
-case study&lt;/li&gt;
-&lt;li&gt;    Where the case study fits into the rest of the course&lt;/li&gt;
-&lt;li&gt;    How the learners will interact with the materials and each other e.g.
-if run in a classroom situation can teams be setup to work on different aspects
-of the case and if so how are ideas feed back to the class&lt;/li&gt;&lt;/ul&gt;"></unicode>
-        <string role="key" value="_questionInstruc"></string>
-        <unicode value="Describe the activity tasks relevant 
-to the case story provided. These could be in the form of questions or 
-instructions for activity which may lead the learner to resolving a dilemma 
-presented. "></unicode>
-        <string role="key" value="_storyInstruc"></string>
-        <unicode value="Create the case story. A good case is one 
-that describes a controversy or sets the scene by describing the characters 
-involved and the situation. It should also allow for some action to be taken 
-in order to gain resolution of the situation."></unicode>
-        <string role="key" value="_tip"></string>
-        <string value=""></string>
-        <string role="key" value="defaultImage"></string>
-        <unicode value="C:\Users\eddyf\AppData\Local\Temp\exe\images\empty.gif"></unicode>
-        <string role="key" value="edit"></string>
-        <bool value="0"></bool>
-        <string role="key" value="emphasis"></string>
-        <int value="1"></int>
-        <string role="key" value="exe.engine.casestudyidevice.CasestudyIdevice.persistenceVersion"></string>
-        <int value="9"></int>
-        <string role="key" value="icon"></string>
-        <unicode value="casestudy"></unicode>
-        <string role="key" value="id"></string>
-        <unicode value="3"></unicode>
-        <string role="key" value="lastIdevice"></string>
-        <bool value="0"></bool>
-        <string role="key" value="originalicon"></string>
-        <unicode value="casestudy"></unicode>
-        <string role="key" value="parentNode"></string>
-        <reference key="3"></reference>
-        <string role="key" value="questions"></string>
+        <unicode value="Historia"></unicode>
+        <string role="key" value="idevices"></string>
         <list>
-         <instance class="exe.engine.casestudyidevice.Question">
+         <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="9">
           <dictionary>
-           <string role="key" value="questionTextArea"></string>
+           <string role="key" value="_title"></string>
+           <unicode value="Free Text"></unicode>
+           <string role="key" value="_author"></string>
+           <unicode value="University of Auckland"></unicode>
+           <string role="key" value="_purpose"></string>
+           <unicode value="The majority of a learning resource will be 
+establishing context, delivering instructions and providing general information.
+This provides the framework within which the learning activities are built and 
+delivered."></unicode>
+           <string role="key" value="_tip"></string>
+           <string value=""></string>
+           <string role="key" value="childs"></string>
+           <list></list>
+           <string role="key" value="content"></string>
            <instance class="exe.engine.field.TextAreaField" reference="10">
             <dictionary>
              <string role="key" value="_id"></string>
-             <int value="96"></int>
+             <int value="86"></int>
              <string role="key" value="_idevice"></string>
              <reference key="9"></reference>
              <string role="key" value="_instruc"></string>
-             <unicode value=""></unicode>
+             <unicode value="Use this field to enter text. This 
+iDevice has no emphasis applied although limited formatting can be applied to 
+text through the text editing buttons associated with the field."></unicode>
              <string role="key" value="_name"></string>
-             <unicode value=""></unicode>
+             <unicode value="Free Text"></unicode>
              <string role="key" value="anchor_names"></string>
              <list></list>
              <string role="key" value="anchors_linked_from_fields"></string>
              <dictionary></dictionary>
              <string role="key" value="content_w_resourcePaths"></string>
-             <unicode content="true" value="&lt;p&gt;En base al video colocado en la parte superior, refactorizar al menos una seccion del codigo realizado en clase&lt;/p&gt;"></unicode>
+             <unicode content="true" value="&lt;h1 style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Los primeros años del Software Libre&lt;/strong&gt;&lt;img src=&quot;https://www.desdeabajo.info/media/k2/items/cache/be1f3b152214bd7762271a9d4cee5a50_XL.jpg&quot; alt=&quot;GNU/Linux&quot; title=&quot;GNU/Linux&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;261&quot; height=&quot;149&quot; /&gt;&lt;/h1&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;En 1983, Richard, siendo programador del Laboratorio de Inteligencia Artificial del MIT, inició el Proyecto GNU para escribir un sistema operativo completo y libre de las restricciones sobre el uso de su código fuente. Esto fue motivado debido a que el desarrollo del software ya no era una construcción colaborativa realizado por las universidades, sino que era desarrollado por las nacientes empresas de software, las cuáles no permitían ni el acceso, ni la modificación del código fuente.&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;El suceso que colmó la paciencia de Stallman, fue el fallo de los drivers de una impresora, los cuales él podía arreglar porque tenía el conocimiento, pero no se lo permitieron porque los términos de la licencia lo impedía. Otra probable inspiración para desarrollar el proyecto fue un desacuerdo con Symbolics Inc. sobre el acceso a las actualizaciones de un software que esta empresa desarrolló a partir de un código fuente desarrollado por el MIT.&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;En 1984, Stallman renuncia al MIT para evitar que la universidad exigiera derechos sobre el software que estaba desarrollando en el marco del Proyecto GNU y en 1985 publica el Manifiesto GNU para describir el propósito del proyecto y explicar la importancia del software libre. En 1986 publicó la definición de “Software Libre” y creo la Fundación para el Software Libre (Free Software Foundation - FSF), y en 1989 publicó la primera versión de la Licencia Pública General GNU (General Public License - GPL).&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;"></unicode>
              <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
              <int value="4"></int>
              <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
@@ -477,7 +405,7 @@ in order to gain resolution of the situation."></unicode>
              <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
              <int value="3"></int>
              <string role="key" value="htmlTag"></string>
-             <string value="section"></string>
+             <string value="div"></string>
              <string role="key" value="images"></string>
              <instance class="exe.engine.galleryidevice.GalleryImages">
               <dictionary>
@@ -492,38 +420,84 @@ in order to gain resolution of the situation."></unicode>
              <string role="key" value="nextImageId"></string>
              <int value="0"></int>
              <string role="key" value="parentNode"></string>
-             <reference key="3"></reference>
+             <none></none>
             </dictionary>
            </instance>
-           <string role="key" value="exe.engine.casestudyidevice.Question.persistenceVersion"></string>
-           <int value="2"></int>
-           <string role="key" value="feedbackTextArea"></string>
-           <instance class="exe.engine.field.Feedback2Field" reference="11">
+           <string role="key" value="edit"></string>
+           <bool value="0"></bool>
+           <string role="key" value="emphasis"></string>
+           <int value="0"></int>
+           <string role="key" value="exe.engine.freetextidevice.FreeTextIdevice.persistenceVersion"></string>
+           <int value="7"></int>
+           <string role="key" value="icon"></string>
+           <string value=""></string>
+           <string role="key" value="id"></string>
+           <unicode value="13"></unicode>
+           <string role="key" value="lastIdevice"></string>
+           <bool value="0"></bool>
+           <string role="key" value="originalicon"></string>
+           <string value=""></string>
+           <string role="key" value="parent"></string>
+           <none></none>
+           <string role="key" value="parentNode"></string>
+           <reference key="11"></reference>
+           <string role="key" value="systemResources"></string>
+           <list></list>
+           <string role="key" value="type"></string>
+           <none></none>
+           <string role="key" value="undo"></string>
+           <bool value="1"></bool>
+           <string role="key" value="userResources"></string>
+           <list></list>
+           <string role="key" value="version"></string>
+           <int value="0"></int>
+          </dictionary>
+         </instance>
+         <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="12">
+          <dictionary>
+           <string role="key" value="_title"></string>
+           <unicode value="Free Text"></unicode>
+           <string role="key" value="_author"></string>
+           <unicode value="University of Auckland"></unicode>
+           <string role="key" value="_purpose"></string>
+           <unicode value="The majority of a learning resource will be 
+establishing context, delivering instructions and providing general information.
+This provides the framework within which the learning activities are built and 
+delivered."></unicode>
+           <string role="key" value="_tip"></string>
+           <string value=""></string>
+           <string role="key" value="childs"></string>
+           <list></list>
+           <string role="key" value="content"></string>
+           <instance class="exe.engine.field.TextAreaField" reference="13">
             <dictionary>
              <string role="key" value="_id"></string>
-             <int value="97"></int>
+             <int value="86"></int>
              <string role="key" value="_idevice"></string>
-             <reference key="9"></reference>
+             <reference key="12"></reference>
              <string role="key" value="_instruc"></string>
-             <unicode value=""></unicode>
+             <unicode value="Use this field to enter text. This 
+iDevice has no emphasis applied although limited formatting can be applied to 
+text through the text editing buttons associated with the field."></unicode>
              <string role="key" value="_name"></string>
-             <unicode value=""></unicode>
+             <unicode value="Free Text"></unicode>
              <string role="key" value="anchor_names"></string>
              <list></list>
              <string role="key" value="anchors_linked_from_fields"></string>
              <dictionary></dictionary>
-             <string role="key" value="buttonCaption"></string>
-             <unicode value=""></unicode>
              <string role="key" value="content_w_resourcePaths"></string>
-             <unicode content="true" value="&lt;p&gt;El estudiante luego de esta actividad podra identificar la importancia de la refactorizacion del codigo&lt;/p&gt;"></unicode>
-             <string role="key" value="exe.engine.field.Feedback2Field.persistenceVersion"></string>
-             <int value="1"></int>
+             <unicode content="true" value="&lt;h1 style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Copyleft&lt;/strong&gt;&lt;/h1&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;El copyleft es un método general para liberar un programa u otro tipo de trabajo (en el sentido de libertad, no de gratuidad), que requiere que todas las versiones modificadas y extendidas sean también libres.&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;La manera más simple de hacer que un programa sea software libre consiste en ponerlo en el dominio público, sin copyright. Esto permite compartir el programa y sus mejoras a quienes así lo deseen. Sin embargo, también posibilita que otra gente sin interés cooperativo convierta el programa en software privativo. Pueden hacer cambios, muchos o pocos, y distribuir el resultado como un producto privativo. Quienes reciban el programa modificado en esas condiciones no podrán disfrutar de la libertad que el autor original les dio. El intermediario se la ha arrebatado.&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;El objetivo del proyecto GNU es dar a todos los usuarios la libertad de redistribuir y cambiar el software GNU. Si los intermediarios pudiesen eliminar esta libertad, nuestro código podría «tener muchos usuarios», pero no les daría libertad. Por eso, en vez de poner el software GNU en el dominio público, lo protegemos con copyleft. Copyleft significa que cualquiera que redistribuya el software, con o sin cambios, debe transmitir la libertad de poder seguir haciendo más copias y cambios. El copyleft garantiza que cualquier usuario tenga libertad.&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;El copyleft es también un incentivo para que otros programadores se sumen al software libre. Algunos programas libres importantes, como el compilador de GNU para C++, existen solo por este motivo.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/1200px-Copyleft.svg.png&quot; alt=&quot;copyleft&quot; title=&quot;copyleft&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;324&quot; height=&quot;324&quot; /&gt;&lt;/p&gt;"></unicode>
              <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
              <int value="4"></int>
              <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
              <int value="2"></int>
-             <string role="key" value="feedback"></string>
-             <unicode value="&lt;p&gt;El estudiante luego de esta actividad podra identificar la importancia de la refactorizacion del codigo&lt;/p&gt;"></unicode>
+             <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
+             <int value="3"></int>
              <string role="key" value="htmlTag"></string>
              <string value="div"></string>
              <string role="key" value="images"></string>
@@ -532,7 +506,7 @@ in order to gain resolution of the situation."></unicode>
                <string role="key" value=".listitems"></string>
                <list></list>
                <string role="key" value="idevice"></string>
-               <reference key="11"></reference>
+               <reference key="13"></reference>
               </dictionary>
              </instance>
              <string role="key" value="intlinks_to_anchors"></string>
@@ -540,87 +514,347 @@ in order to gain resolution of the situation."></unicode>
              <string role="key" value="nextImageId"></string>
              <int value="0"></int>
              <string role="key" value="parentNode"></string>
-             <reference key="3"></reference>
+             <none></none>
             </dictionary>
            </instance>
+           <string role="key" value="edit"></string>
+           <bool value="0"></bool>
+           <string role="key" value="emphasis"></string>
+           <int value="0"></int>
+           <string role="key" value="exe.engine.freetextidevice.FreeTextIdevice.persistenceVersion"></string>
+           <int value="7"></int>
+           <string role="key" value="icon"></string>
+           <string value=""></string>
+           <string role="key" value="id"></string>
+           <unicode value="16"></unicode>
+           <string role="key" value="lastIdevice"></string>
+           <bool value="0"></bool>
+           <string role="key" value="originalicon"></string>
+           <string value=""></string>
+           <string role="key" value="parent"></string>
+           <none></none>
+           <string role="key" value="parentNode"></string>
+           <reference key="11"></reference>
+           <string role="key" value="systemResources"></string>
+           <list></list>
+           <string role="key" value="type"></string>
+           <none></none>
+           <string role="key" value="undo"></string>
+           <bool value="1"></bool>
+           <string role="key" value="userResources"></string>
+           <list></list>
+           <string role="key" value="version"></string>
+           <int value="0"></int>
           </dictionary>
          </instance>
         </list>
-        <string role="key" value="storyTextArea"></string>
-        <instance class="exe.engine.field.TextAreaField" reference="12">
-         <dictionary>
-          <string role="key" value="_id"></string>
-          <int value="95"></int>
-          <string role="key" value="_idevice"></string>
-          <reference key="9"></reference>
-          <string role="key" value="_instruc"></string>
-          <unicode value="Create the case story. A good case is one 
-that describes a controversy or sets the scene by describing the characters 
-involved and the situation. It should also allow for some action to be taken 
-in order to gain resolution of the situation."></unicode>
-          <string role="key" value="_name"></string>
-          <unicode value="Story:"></unicode>
-          <string role="key" value="anchor_names"></string>
-          <list></list>
-          <string role="key" value="anchors_linked_from_fields"></string>
-          <dictionary></dictionary>
-          <string role="key" value="content_w_resourcePaths"></string>
-          <unicode content="true" value=""></unicode>
-          <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
-          <int value="4"></int>
-          <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
-          <int value="2"></int>
-          <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
-          <int value="3"></int>
-          <string role="key" value="htmlTag"></string>
-          <string value="section"></string>
-          <string role="key" value="images"></string>
-          <instance class="exe.engine.galleryidevice.GalleryImages">
-           <dictionary>
-            <string role="key" value=".listitems"></string>
-            <list></list>
-            <string role="key" value="idevice"></string>
-            <reference key="12"></reference>
-           </dictionary>
-          </instance>
-          <string role="key" value="intlinks_to_anchors"></string>
-          <dictionary></dictionary>
-          <string role="key" value="nextImageId"></string>
-          <int value="0"></int>
-          <string role="key" value="parentNode"></string>
-          <reference key="3"></reference>
-         </dictionary>
-        </instance>
-        <string role="key" value="systemResources"></string>
+        <string role="key" value="_id"></string>
+        <unicode value="1"></unicode>
+        <string role="key" value="_package"></string>
+        <reference key="8"></reference>
+        <string role="key" value="anchor_fields"></string>
         <list></list>
-        <string role="key" value="undo"></string>
-        <bool value="1"></bool>
-        <string role="key" value="userResources"></string>
+        <string role="key" value="exe.engine.node.Node.persistenceVersion"></string>
+        <int value="2"></int>
+        <string role="key" value="exportType"></string>
+        <string value="website"></string>
+        <string role="key" value="last_full_node_path"></string>
+        <string value="exe-node:Fundamentos%20del%20Software%20Libre:Historia"></string>
+        <string role="key" value="parent"></string>
+        <reference key="3"></reference>
+        <string role="key" value="top_anchors_linked_from_fields"></string>
         <list></list>
-        <string role="key" value="version"></string>
-        <int value="0"></int>
+        <string role="key" value="children"></string>
+        <list>
+         <instance class="exe.engine.node.Node" reference="16">
+          <dictionary>
+           <string role="key" value="_title"></string>
+           <unicode value="Software Libre vs Software Propietario vs Software de Código Abierto"></unicode>
+           <string role="key" value="idevices"></string>
+           <list>
+            <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="14">
+             <dictionary>
+              <string role="key" value="_title"></string>
+              <unicode value="Free Text"></unicode>
+              <string role="key" value="_author"></string>
+              <unicode value="University of Auckland"></unicode>
+              <string role="key" value="_purpose"></string>
+              <unicode value="The majority of a learning resource will be 
+establishing context, delivering instructions and providing general information.
+This provides the framework within which the learning activities are built and 
+delivered."></unicode>
+              <string role="key" value="_tip"></string>
+              <string value=""></string>
+              <string role="key" value="childs"></string>
+              <list></list>
+              <string role="key" value="content"></string>
+              <instance class="exe.engine.field.TextAreaField" reference="15">
+               <dictionary>
+                <string role="key" value="_id"></string>
+                <int value="86"></int>
+                <string role="key" value="_idevice"></string>
+                <reference key="14"></reference>
+                <string role="key" value="_instruc"></string>
+                <unicode value="Use this field to enter text. This 
+iDevice has no emphasis applied although limited formatting can be applied to 
+text through the text editing buttons associated with the field."></unicode>
+                <string role="key" value="_name"></string>
+                <unicode value="Free Text"></unicode>
+                <string role="key" value="anchor_names"></string>
+                <list></list>
+                <string role="key" value="anchors_linked_from_fields"></string>
+                <dictionary></dictionary>
+                <string role="key" value="content_w_resourcePaths"></string>
+                <unicode content="true" value="&lt;p&gt;&lt;strong&gt;Software Propietario:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Software del cual no existe una forma libre de acceso a su código fuente, el cual solo se encuentra a disposición de su desarrollador y no se permite su libre modificación, adaptación o incluso lectura por parte de terceros.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://okhosting.com/resources/uploads/2014/08/sofware-propietario.jpg&quot; alt=&quot;Software Propietario&quot; title=&quot;Software Propietario&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;265&quot; height=&quot;151&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Software de Código Abierto:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Software cuyo código fuente y otros derechos que normalmente son exclusivos para quienes poseen los derechos de autor, son publicados bajo una licencia de código abierto o forman parte del dominio público. En las licencias compatibles con la Open Source Definition el propietario de los derechos de autor permite a los usuarios utilizar, cambiar y redistribuir el software, a cualquiera, para cualquier propósito, ya sea en su forma modificada o en su forma original.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Opensource.svg/744px-Opensource.svg.png&quot; alt=&quot;opensource&quot; title=&quot;opensourse&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;120&quot; height=&quot;170&quot; /&gt;&lt;/p&gt;"></unicode>
+                <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
+                <int value="4"></int>
+                <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
+                <int value="2"></int>
+                <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
+                <int value="3"></int>
+                <string role="key" value="htmlTag"></string>
+                <string value="div"></string>
+                <string role="key" value="images"></string>
+                <instance class="exe.engine.galleryidevice.GalleryImages">
+                 <dictionary>
+                  <string role="key" value=".listitems"></string>
+                  <list></list>
+                  <string role="key" value="idevice"></string>
+                  <reference key="15"></reference>
+                 </dictionary>
+                </instance>
+                <string role="key" value="intlinks_to_anchors"></string>
+                <dictionary></dictionary>
+                <string role="key" value="nextImageId"></string>
+                <int value="0"></int>
+                <string role="key" value="parentNode"></string>
+                <none></none>
+               </dictionary>
+              </instance>
+              <string role="key" value="edit"></string>
+              <bool value="0"></bool>
+              <string role="key" value="emphasis"></string>
+              <int value="0"></int>
+              <string role="key" value="exe.engine.freetextidevice.FreeTextIdevice.persistenceVersion"></string>
+              <int value="7"></int>
+              <string role="key" value="icon"></string>
+              <string value=""></string>
+              <string role="key" value="id"></string>
+              <unicode value="14"></unicode>
+              <string role="key" value="lastIdevice"></string>
+              <bool value="0"></bool>
+              <string role="key" value="originalicon"></string>
+              <string value=""></string>
+              <string role="key" value="parent"></string>
+              <none></none>
+              <string role="key" value="parentNode"></string>
+              <reference key="16"></reference>
+              <string role="key" value="systemResources"></string>
+              <list></list>
+              <string role="key" value="type"></string>
+              <none></none>
+              <string role="key" value="undo"></string>
+              <bool value="1"></bool>
+              <string role="key" value="userResources"></string>
+              <list></list>
+              <string role="key" value="version"></string>
+              <int value="0"></int>
+             </dictionary>
+            </instance>
+            <instance class="exe.engine.freetextidevice.FreeTextIdevice" reference="17">
+             <dictionary>
+              <string role="key" value="_title"></string>
+              <unicode value="Free Text"></unicode>
+              <string role="key" value="_author"></string>
+              <unicode value="University of Auckland"></unicode>
+              <string role="key" value="_purpose"></string>
+              <unicode value="The majority of a learning resource will be 
+establishing context, delivering instructions and providing general information.
+This provides the framework within which the learning activities are built and 
+delivered."></unicode>
+              <string role="key" value="_tip"></string>
+              <string value=""></string>
+              <string role="key" value="childs"></string>
+              <list></list>
+              <string role="key" value="content"></string>
+              <instance class="exe.engine.field.TextAreaField" reference="18">
+               <dictionary>
+                <string role="key" value="_id"></string>
+                <int value="86"></int>
+                <string role="key" value="_idevice"></string>
+                <reference key="17"></reference>
+                <string role="key" value="_instruc"></string>
+                <unicode value="Use this field to enter text. This 
+iDevice has no emphasis applied although limited formatting can be applied to 
+text through the text editing buttons associated with the field."></unicode>
+                <string role="key" value="_name"></string>
+                <unicode value="Free Text"></unicode>
+                <string role="key" value="anchor_names"></string>
+                <list></list>
+                <string role="key" value="anchors_linked_from_fields"></string>
+                <dictionary></dictionary>
+                <string role="key" value="content_w_resourcePaths"></string>
+                <unicode content="true" value="&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td colspan=&quot;3&quot; style=&quot;text-align: center;&quot; width=&quot;589&quot;&gt;
+&lt;h1&gt;&lt;strong&gt;Diferencias&lt;/strong&gt;&lt;/h1&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align: center;&quot; width=&quot;196&quot;&gt;
+&lt;h1&gt;Software Libre&lt;/h1&gt;
+&lt;/td&gt;
+&lt;td style=&quot;text-align: center;&quot; width=&quot;196&quot;&gt;
+&lt;h1&gt;Software de Código Abierto&lt;/h1&gt;
+&lt;/td&gt;
+&lt;td style=&quot;text-align: center;&quot; width=&quot;196&quot;&gt;
+&lt;h1&gt;Software Propietario&lt;/h1&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align: justify;&quot; width=&quot;196&quot;&gt;
+&lt;p&gt;-Nos brinda la libertad de usar el programa para cualquier propósito.&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;text-align: justify;&quot; width=&quot;196&quot;&gt;
+&lt;p&gt;-No todo software de código abierto es software libre, algunas cuentan con licencias demasiado restrictivas.&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;text-align: justify;&quot; width=&quot;196&quot;&gt;
+&lt;p&gt;-No nos brinda la posibilidad de revisar el código fuente.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align: justify;&quot; width=&quot;196&quot;&gt;
+&lt;p&gt;-Nos da la libertad de estudiar como funciona el programa (código fuente) y modificarlo para que se adapte a nuestras necesidades.&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;text-align: justify;&quot; width=&quot;196&quot;&gt;
+&lt;p&gt;- En software libre los autores de las modificaciones pueden pedir que un producto basado en el suyo sea renombrado para evitar confusiones, en código abierto se puede impedir la distribución de algunos subproductos, aunque siempre se puedan publicar como parches o añadidos al original.&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;text-align: justify;&quot; width=&quot;196&quot;&gt;
+&lt;p&gt;-Generalmente cuanta con puertas traseras (back doors) con las cuales se puede evitar las seguridades (autenticación) y acceder al sistema para realizar cambios.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align: justify;&quot; width=&quot;196&quot;&gt;
+&lt;p&gt;-Podemos distribuir copias del programa, ayudando a nuestro prójimo.&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;text-align: justify;&quot; width=&quot;196&quot;&gt;
+&lt;p&gt;-Utilizar software de código abierto no siempre implica libertad, sino disponibilidad a la hora de acceder al código fuente.&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;text-align: justify;&quot; width=&quot;196&quot;&gt;
+&lt;p&gt;-No se pueden distribuir copias ya que se atenta contra la licencia del software.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align: justify;&quot; width=&quot;196&quot;&gt;
+&lt;p&gt;-Podemos hacer mejoras al programa y hacer público estos cambios, para que la comunidad se beneficie&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;text-align: justify;&quot; width=&quot;196&quot;&gt;
+&lt;p&gt;-Establece al aspecto técnico como prioritario dejando de lado las cuestiones éticas.&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style=&quot;text-align: justify;&quot; width=&quot;196&quot;&gt;
+&lt;p&gt;- Las actualizaciones y el soporte solo son dadas por el fabricante.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;"></unicode>
+                <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
+                <int value="4"></int>
+                <string role="key" value="exe.engine.field.FieldWithResources.persistenceVersion"></string>
+                <int value="2"></int>
+                <string role="key" value="exe.engine.field.TextAreaField.persistenceVersion"></string>
+                <int value="3"></int>
+                <string role="key" value="htmlTag"></string>
+                <string value="div"></string>
+                <string role="key" value="images"></string>
+                <instance class="exe.engine.galleryidevice.GalleryImages">
+                 <dictionary>
+                  <string role="key" value=".listitems"></string>
+                  <list></list>
+                  <string role="key" value="idevice"></string>
+                  <reference key="18"></reference>
+                 </dictionary>
+                </instance>
+                <string role="key" value="intlinks_to_anchors"></string>
+                <dictionary></dictionary>
+                <string role="key" value="nextImageId"></string>
+                <int value="0"></int>
+                <string role="key" value="parentNode"></string>
+                <none></none>
+               </dictionary>
+              </instance>
+              <string role="key" value="edit"></string>
+              <bool value="0"></bool>
+              <string role="key" value="emphasis"></string>
+              <int value="0"></int>
+              <string role="key" value="exe.engine.freetextidevice.FreeTextIdevice.persistenceVersion"></string>
+              <int value="7"></int>
+              <string role="key" value="icon"></string>
+              <string value=""></string>
+              <string role="key" value="id"></string>
+              <unicode value="15"></unicode>
+              <string role="key" value="lastIdevice"></string>
+              <bool value="0"></bool>
+              <string role="key" value="originalicon"></string>
+              <string value=""></string>
+              <string role="key" value="parent"></string>
+              <none></none>
+              <string role="key" value="parentNode"></string>
+              <reference key="16"></reference>
+              <string role="key" value="systemResources"></string>
+              <list></list>
+              <string role="key" value="type"></string>
+              <none></none>
+              <string role="key" value="undo"></string>
+              <bool value="1"></bool>
+              <string role="key" value="userResources"></string>
+              <list></list>
+              <string role="key" value="version"></string>
+              <int value="0"></int>
+             </dictionary>
+            </instance>
+           </list>
+           <string role="key" value="_id"></string>
+           <unicode value="2"></unicode>
+           <string role="key" value="_package"></string>
+           <reference key="8"></reference>
+           <string role="key" value="anchor_fields"></string>
+           <list></list>
+           <string role="key" value="exe.engine.node.Node.persistenceVersion"></string>
+           <int value="2"></int>
+           <string role="key" value="exportType"></string>
+           <string value="website"></string>
+           <string role="key" value="last_full_node_path"></string>
+           <string value="exe-node:Fundamentos%20del%20Software%20Libre:Historia:Software%20Libre%20vs%20Software%20Propietario%20vs%20Software%20de%20C%C3%B3digo%20Abierto"></string>
+           <string role="key" value="parent"></string>
+           <reference key="11"></reference>
+           <string role="key" value="top_anchors_linked_from_fields"></string>
+           <list></list>
+           <string role="key" value="children"></string>
+           <list></list>
+          </dictionary>
+         </instance>
+        </list>
        </dictionary>
       </instance>
      </list>
-     <string role="key" value="_id"></string>
-     <unicode value="0"></unicode>
-     <string role="key" value="_package"></string>
-     <reference key="5"></reference>
-     <string role="key" value="exe.engine.node.Node.persistenceVersion"></string>
-     <int value="2"></int>
-     <string role="key" value="exportType"></string>
-     <string value="website"></string>
-     <string role="key" value="last_full_node_path"></string>
-     <string value="exe-node:Inicio"></string>
-     <string role="key" value="parent"></string>
-     <none></none>
-     <string role="key" value="children"></string>
-     <list></list>
     </dictionary>
    </instance>
+   <unicode role="key" value="1"></unicode>
+   <reference key="11"></reference>
+   <unicode role="key" value="2"></unicode>
+   <reference key="16"></reference>
   </dictionary>
   <string role="key" value="_objectives"></string>
-  <unicode value=""></unicode>
+  <unicode value="Conocer los fundamentos del Software Libre.
+Diferenciar el software libre del software propietario y del código abierto.
+Entender la utilidad del copyleft"></unicode>
   <string role="key" value="_preknowledge"></string>
   <unicode value=""></unicode>
   <string role="key" value="backgroundImgTile"></string>
@@ -628,7 +862,7 @@ in order to gain resolution of the situation."></unicode>
   <string role="key" value="compatibleWithVersion9"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="3"></reference>
+  <reference key="11"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
@@ -637,15 +871,18 @@ in order to gain resolution of the situation."></unicode>
     <string role="key" value="coverage"></string>
     <unicode value=""></unicode>
     <string role="key" value="creator"></string>
-    <unicode value=""></unicode>
+    <unicode value="Miguel Esteban Álvarez Naranjo"></unicode>
     <string role="key" value="date"></string>
     <unicode value=""></unicode>
     <string role="key" value="description"></string>
-    <unicode value=""></unicode>
+    <unicode value="Las 4 libertades del software libre.
+Historia.
+diferencias entre el software libre, el software propietario y el codigo abierto.
+Copyleft"></unicode>
     <string role="key" value="format"></string>
     <unicode value=""></unicode>
     <string role="key" value="identifier"></string>
-    <unicode value="d183d8d1-14fa-4cad-a5f6-222d506d0eca"></unicode>
+    <unicode value="eadac6f6-d518-4a26-b993-84f47428c833"></unicode>
     <string role="key" value="language"></string>
     <unicode value="es"></unicode>
     <string role="key" value="publisher"></string>
@@ -657,9 +894,9 @@ in order to gain resolution of the situation."></unicode>
     <string role="key" value="source"></string>
     <unicode value=""></unicode>
     <string role="key" value="subject"></string>
-    <unicode value=""></unicode>
+    <unicode value="Software Libre"></unicode>
     <string role="key" value="title"></string>
-    <unicode value=""></unicode>
+    <unicode value="Fundamentos del Software Libre"></unicode>
     <string role="key" value="type"></string>
     <unicode value=""></unicode>
    </dictionary>
@@ -671,11 +908,11 @@ in order to gain resolution of the situation."></unicode>
   <string role="key" value="exportSource"></string>
   <bool value="1"></bool>
   <string role="key" value="footer"></string>
-  <string value=""></string>
+  <unicode value=""></unicode>
   <string role="key" value="isLoading"></string>
   <bool value="0"></bool>
   <string role="key" value="license"></string>
-  <string value="creative commons: attribution - share alike 4.0"></string>
+  <unicode value="creative commons: attribution - share alike 4.0"></unicode>
   <string role="key" value="lom"></string>
   <instance class="exe.engine.lom.lomsubs.lomSub">
    <dictionary>
@@ -694,13 +931,137 @@ in order to gain resolution of the situation."></unicode>
        <string role="key" value="cognitiveProcess"></string>
        <list></list>
        <string role="key" value="context"></string>
-       <list></list>
+       <list>
+        <instance class="exe.engine.lom.lomsubs.contextSub">
+         <dictionary>
+          <string role="key" value="extensiontype_"></string>
+          <none></none>
+          <string role="key" value="source"></string>
+          <instance class="exe.engine.lom.lomsubs.sourceValueSub">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="string"></string>
+            <list></list>
+            <string role="key" value="uniqueElementName"></string>
+            <string value="source"></string>
+            <string role="key" value="valueOf_"></string>
+            <string value="LOMv1.0"></string>
+           </dictionary>
+          </instance>
+          <string role="key" value="value"></string>
+          <instance class="exe.engine.lom.lomsubs.contextValueSub">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="source"></string>
+            <none></none>
+            <string role="key" value="uniqueElementName"></string>
+            <string value="value"></string>
+            <string role="key" value="value"></string>
+            <none></none>
+            <string role="key" value="valueOf_"></string>
+            <string value="other"></string>
+           </dictionary>
+          </instance>
+         </dictionary>
+        </instance>
+        <instance class="exe.engine.lom.lomsubs.contextSub">
+         <dictionary>
+          <string role="key" value="extensiontype_"></string>
+          <none></none>
+          <string role="key" value="source"></string>
+          <instance class="exe.engine.lom.lomsubs.sourceValueSub">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="string"></string>
+            <list></list>
+            <string role="key" value="uniqueElementName"></string>
+            <string value="source"></string>
+            <string role="key" value="valueOf_"></string>
+            <string value="LOMv1.0"></string>
+           </dictionary>
+          </instance>
+          <string role="key" value="value"></string>
+          <instance class="exe.engine.lom.lomsubs.contextValueSub">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="source"></string>
+            <none></none>
+            <string role="key" value="uniqueElementName"></string>
+            <string value="value"></string>
+            <string role="key" value="value"></string>
+            <none></none>
+            <string role="key" value="valueOf_"></string>
+            <string value="school"></string>
+           </dictionary>
+          </instance>
+         </dictionary>
+        </instance>
+       </list>
        <string role="key" value="description"></string>
-       <list></list>
+       <list>
+        <instance class="exe.engine.lom.lomsubs.descriptionSub">
+         <dictionary>
+          <string role="key" value="extensiontype_"></string>
+          <none></none>
+          <string role="key" value="string"></string>
+          <list>
+           <instance class="exe.engine.lom.lomsubs.LangStringSub">
+            <dictionary>
+             <string role="key" value="language"></string>
+             <string value="es"></string>
+             <string role="key" value="valueOf_"></string>
+             <unicode value="OBJETIVOS: Conocer los fundamentos del Software Libre.
+Diferenciar el software libre del software propietario y del código abierto.
+Entender la utilidad del copyleft"></unicode>
+            </dictionary>
+           </instance>
+          </list>
+         </dictionary>
+        </instance>
+       </list>
        <string role="key" value="difficulty"></string>
        <none></none>
        <string role="key" value="intendedEndUserRole"></string>
-       <list></list>
+       <list>
+        <instance class="exe.engine.lom.lomsubs.intendedEndUserRoleSub">
+         <dictionary>
+          <string role="key" value="extensiontype_"></string>
+          <none></none>
+          <string role="key" value="source"></string>
+          <instance class="exe.engine.lom.lomsubs.sourceValueSub">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="string"></string>
+            <list></list>
+            <string role="key" value="uniqueElementName"></string>
+            <string value="source"></string>
+            <string role="key" value="valueOf_"></string>
+            <string value="LOMv1.0"></string>
+           </dictionary>
+          </instance>
+          <string role="key" value="value"></string>
+          <instance class="exe.engine.lom.lomsubs.intendedEndUserRoleValueSub">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="source"></string>
+            <none></none>
+            <string role="key" value="uniqueElementName"></string>
+            <string value="value"></string>
+            <string role="key" value="value"></string>
+            <none></none>
+            <string role="key" value="valueOf_"></string>
+            <string value="learner"></string>
+           </dictionary>
+          </instance>
+         </dictionary>
+        </instance>
+       </list>
        <string role="key" value="interactivityLevel"></string>
        <none></none>
        <string role="key" value="interactivityType"></string>
@@ -717,7 +1078,42 @@ in order to gain resolution of the situation."></unicode>
         </instance>
        </list>
        <string role="key" value="learningResourceType"></string>
-       <list></list>
+       <list>
+        <instance class="exe.engine.lom.lomsubs.learningResourceTypeSub">
+         <dictionary>
+          <string role="key" value="extensiontype_"></string>
+          <none></none>
+          <string role="key" value="source"></string>
+          <instance class="exe.engine.lom.lomsubs.sourceValueSub">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="string"></string>
+            <list></list>
+            <string role="key" value="uniqueElementName"></string>
+            <string value="source"></string>
+            <string role="key" value="valueOf_"></string>
+            <string value="LOMv1.0"></string>
+           </dictionary>
+          </instance>
+          <string role="key" value="value"></string>
+          <instance class="exe.engine.lom.lomsubs.learningResourceTypeValueSub">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="source"></string>
+            <none></none>
+            <string role="key" value="uniqueElementName"></string>
+            <string value="value"></string>
+            <string role="key" value="value"></string>
+            <none></none>
+            <string role="key" value="valueOf_"></string>
+            <string value="narrative text"></string>
+           </dictionary>
+          </instance>
+         </dictionary>
+        </instance>
+       </list>
        <string role="key" value="semanticDensity"></string>
        <none></none>
        <string role="key" value="typicalAgeRange"></string>
@@ -770,7 +1166,25 @@ in order to gain resolution of the situation."></unicode>
       <string role="key" value="coverage"></string>
       <list></list>
       <string role="key" value="description"></string>
-      <list></list>
+      <list>
+       <instance class="exe.engine.lom.lomsubs.descriptionSub">
+        <dictionary>
+         <string role="key" value="extensiontype_"></string>
+         <none></none>
+         <string role="key" value="string"></string>
+         <list>
+          <instance class="exe.engine.lom.lomsubs.LangStringSub">
+           <dictionary>
+            <string role="key" value="language"></string>
+            <string value="es"></string>
+            <string role="key" value="valueOf_"></string>
+            <string value="Las 4 libertades del software libre.\nHistoria.\ndiferencias entre el software libre, el software propietario y el codigo abierto.\nCopyleft"></string>
+           </dictionary>
+          </instance>
+         </list>
+        </dictionary>
+       </instance>
+      </list>
       <string role="key" value="identifier"></string>
       <list>
        <instance class="exe.engine.lom.lomsubs.identifierSub">
@@ -790,7 +1204,7 @@ in order to gain resolution of the situation."></unicode>
            <string role="key" value="uniqueElementName"></string>
            <string value="entry"></string>
            <string role="key" value="valueOf_"></string>
-           <unicode value="d183d8d1-14fa-4cad-a5f6-222d506d0eca"></unicode>
+           <unicode value="eadac6f6-d518-4a26-b993-84f47428c833"></unicode>
           </dictionary>
          </instance>
         </dictionary>
@@ -812,18 +1226,175 @@ in order to gain resolution of the situation."></unicode>
       <string role="key" value="structure"></string>
       <none></none>
       <string role="key" value="title"></string>
-      <none></none>
+      <instance class="exe.engine.lom.lomsubs.titleSub">
+       <dictionary>
+        <string role="key" value="extensiontype_"></string>
+        <none></none>
+        <string role="key" value="string"></string>
+        <list>
+         <instance class="exe.engine.lom.lomsubs.LangStringSub">
+          <dictionary>
+           <string role="key" value="language"></string>
+           <string value="es"></string>
+           <string role="key" value="valueOf_"></string>
+           <string value="Fundamentos del Software Libre"></string>
+          </dictionary>
+         </instance>
+        </list>
+        <string role="key" value="uniqueElementName"></string>
+        <none></none>
+       </dictionary>
+      </instance>
       <string role="key" value="uniqueElementName"></string>
       <string value="general"></string>
      </dictionary>
     </instance>
     <string role="key" value="lifeCycle"></string>
-    <none></none>
+    <instance class="exe.engine.lom.lomsubs.lifeCycleSub">
+     <dictionary>
+      <string role="key" value="contribute"></string>
+      <list>
+       <instance class="exe.engine.lom.lomsubs.contributeSub">
+        <dictionary>
+         <string role="key" value="date"></string>
+         <instance class="exe.engine.lom.lomsubs.dateSub" reference="19">
+          <dictionary>
+           <string role="key" value="dateTime"></string>
+           <instance class="exe.engine.lom.lomsubs.DateTimeValueSub">
+            <dictionary>
+             <string role="key" value="uniqueElementName"></string>
+             <string value="dateTime"></string>
+             <string role="key" value="valueOf_"></string>
+             <string value="2018-05-21T22:06:47.00-05:00"></string>
+            </dictionary>
+           </instance>
+           <string role="key" value="description"></string>
+           <instance class="exe.engine.lom.lomsubs.LanguageStringSub">
+            <dictionary>
+             <string role="key" value="extensiontype_"></string>
+             <none></none>
+             <string role="key" value="string"></string>
+             <list>
+              <instance class="exe.engine.lom.lomsubs.LangStringSub">
+               <dictionary>
+                <string role="key" value="language"></string>
+                <string value="es"></string>
+                <string role="key" value="valueOf_"></string>
+                <string value="Fecha de creaci\xc3\xb3n de los metadatos"></string>
+               </dictionary>
+              </instance>
+             </list>
+            </dictionary>
+           </instance>
+           <string role="key" value="extensiontype_"></string>
+           <none></none>
+           <string role="key" value="uniqueElementName"></string>
+           <none></none>
+           <string role="key" value="valueOf_"></string>
+           <none></none>
+          </dictionary>
+         </instance>
+         <string role="key" value="entity"></string>
+         <list>
+          <instance class="exe.engine.lom.lomsubs.entitySub" reference="20">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="valueOf_"></string>
+            <string value="BEGIN:VCARD VERSION:3.0 FN:Miguel Esteban \xc3\x81lvarez Naranjo EMAIL;TYPE=INTERNET: ORG: END:VCARD"></string>
+           </dictionary>
+          </instance>
+         </list>
+         <string role="key" value="role"></string>
+         <instance class="exe.engine.lom.lomsubs.roleSub">
+          <dictionary>
+           <string role="key" value="extensiontype_"></string>
+           <none></none>
+           <string role="key" value="source"></string>
+           <instance class="exe.engine.lom.lomsubs.sourceValueSub" reference="21">
+            <dictionary>
+             <string role="key" value="extensiontype_"></string>
+             <none></none>
+             <string role="key" value="string"></string>
+             <list></list>
+             <string role="key" value="uniqueElementName"></string>
+             <string value="source"></string>
+             <string role="key" value="valueOf_"></string>
+             <string value="LOMv1.0"></string>
+            </dictionary>
+           </instance>
+           <string role="key" value="uniqueElementName"></string>
+           <string value="role"></string>
+           <string role="key" value="value"></string>
+           <instance class="exe.engine.lom.lomsubs.roleValueSub">
+            <dictionary>
+             <string role="key" value="extensiontype_"></string>
+             <none></none>
+             <string role="key" value="source"></string>
+             <none></none>
+             <string role="key" value="uniqueElementName"></string>
+             <string value="value"></string>
+             <string role="key" value="value"></string>
+             <none></none>
+             <string role="key" value="valueOf_"></string>
+             <string value="author"></string>
+            </dictionary>
+           </instance>
+          </dictionary>
+         </instance>
+        </dictionary>
+       </instance>
+      </list>
+      <string role="key" value="status"></string>
+      <none></none>
+      <string role="key" value="uniqueElementName"></string>
+      <none></none>
+      <string role="key" value="version"></string>
+      <none></none>
+     </dictionary>
+    </instance>
     <string role="key" value="metaMetadata"></string>
     <instance class="exe.engine.lom.lomsubs.metaMetadataSub">
      <dictionary>
       <string role="key" value="contribute"></string>
-      <list></list>
+      <list>
+       <instance class="exe.engine.lom.lomsubs.contributeMetaSub">
+        <dictionary>
+         <string role="key" value="date"></string>
+         <reference key="19"></reference>
+         <string role="key" value="entity"></string>
+         <list>
+          <reference key="20"></reference>
+         </list>
+         <string role="key" value="role"></string>
+         <instance class="exe.engine.lom.lomsubs.roleSub">
+          <dictionary>
+           <string role="key" value="extensiontype_"></string>
+           <none></none>
+           <string role="key" value="source"></string>
+           <reference key="21"></reference>
+           <string role="key" value="uniqueElementName"></string>
+           <string value="role"></string>
+           <string role="key" value="value"></string>
+           <instance class="exe.engine.lom.lomsubs.roleValueSub">
+            <dictionary>
+             <string role="key" value="extensiontype_"></string>
+             <none></none>
+             <string role="key" value="source"></string>
+             <none></none>
+             <string role="key" value="uniqueElementName"></string>
+             <string value="value"></string>
+             <string role="key" value="value"></string>
+             <none></none>
+             <string role="key" value="valueOf_"></string>
+             <string value="creator"></string>
+            </dictionary>
+           </instance>
+          </dictionary>
+         </instance>
+        </dictionary>
+       </instance>
+      </list>
       <string role="key" value="identifier"></string>
       <list></list>
       <string role="key" value="language"></string>
@@ -851,7 +1422,55 @@ in order to gain resolution of the situation."></unicode>
     <string role="key" value="relation"></string>
     <list></list>
     <string role="key" value="rights"></string>
-    <none></none>
+    <instance class="exe.engine.lom.lomsubs.rightsSub">
+     <dictionary>
+      <string role="key" value="access"></string>
+      <none></none>
+      <string role="key" value="copyrightAndOtherRestrictions"></string>
+      <instance class="exe.engine.lom.lomsubs.copyrightAndOtherRestrictionsSub">
+       <dictionary>
+        <string role="key" value="extensiontype_"></string>
+        <none></none>
+        <string role="key" value="source"></string>
+        <instance class="exe.engine.lom.lomsubs.sourceValueSub">
+         <dictionary>
+          <string role="key" value="extensiontype_"></string>
+          <none></none>
+          <string role="key" value="string"></string>
+          <list></list>
+          <string role="key" value="uniqueElementName"></string>
+          <string value="source"></string>
+          <string role="key" value="valueOf_"></string>
+          <string value="LOMv1.0"></string>
+         </dictionary>
+        </instance>
+        <string role="key" value="uniqueElementName"></string>
+        <string value="copyrightAndOtherRestrictions"></string>
+        <string role="key" value="value"></string>
+        <instance class="exe.engine.lom.lomsubs.copyrightAndOtherRestrictionsValueSub">
+         <dictionary>
+          <string role="key" value="extensiontype_"></string>
+          <none></none>
+          <string role="key" value="source"></string>
+          <none></none>
+          <string role="key" value="uniqueElementName"></string>
+          <string value="value"></string>
+          <string role="key" value="value"></string>
+          <none></none>
+          <string role="key" value="valueOf_"></string>
+          <string value="yes"></string>
+         </dictionary>
+        </instance>
+       </dictionary>
+      </instance>
+      <string role="key" value="cost"></string>
+      <none></none>
+      <string role="key" value="description"></string>
+      <none></none>
+      <string role="key" value="uniqueElementName"></string>
+      <none></none>
+     </dictionary>
+    </instance>
     <string role="key" value="technical"></string>
     <none></none>
    </dictionary>
@@ -874,13 +1493,137 @@ in order to gain resolution of the situation."></unicode>
        <string role="key" value="cognitiveProcess"></string>
        <list></list>
        <string role="key" value="context"></string>
-       <list></list>
+       <list>
+        <instance class="exe.engine.lom.lomsubs.contextSub">
+         <dictionary>
+          <string role="key" value="extensiontype_"></string>
+          <none></none>
+          <string role="key" value="source"></string>
+          <instance class="exe.engine.lom.lomsubs.sourceValueSub">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="string"></string>
+            <list></list>
+            <string role="key" value="uniqueElementName"></string>
+            <string value="source"></string>
+            <string role="key" value="valueOf_"></string>
+            <string value="LOM-ESv1.0"></string>
+           </dictionary>
+          </instance>
+          <string role="key" value="value"></string>
+          <instance class="exe.engine.lom.lomsubs.contextValueSub">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="source"></string>
+            <none></none>
+            <string role="key" value="uniqueElementName"></string>
+            <string value="value"></string>
+            <string role="key" value="value"></string>
+            <none></none>
+            <string role="key" value="valueOf_"></string>
+            <string value="presencial"></string>
+           </dictionary>
+          </instance>
+         </dictionary>
+        </instance>
+        <instance class="exe.engine.lom.lomsubs.contextSub">
+         <dictionary>
+          <string role="key" value="extensiontype_"></string>
+          <none></none>
+          <string role="key" value="source"></string>
+          <instance class="exe.engine.lom.lomsubs.sourceValueSub">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="string"></string>
+            <list></list>
+            <string role="key" value="uniqueElementName"></string>
+            <string value="source"></string>
+            <string role="key" value="valueOf_"></string>
+            <string value="LOM-ESv1.0"></string>
+           </dictionary>
+          </instance>
+          <string role="key" value="value"></string>
+          <instance class="exe.engine.lom.lomsubs.contextValueSub">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="source"></string>
+            <none></none>
+            <string role="key" value="uniqueElementName"></string>
+            <string value="value"></string>
+            <string role="key" value="value"></string>
+            <none></none>
+            <string role="key" value="valueOf_"></string>
+            <string value="classroom"></string>
+           </dictionary>
+          </instance>
+         </dictionary>
+        </instance>
+       </list>
        <string role="key" value="description"></string>
-       <list></list>
+       <list>
+        <instance class="exe.engine.lom.lomsubs.descriptionSub">
+         <dictionary>
+          <string role="key" value="extensiontype_"></string>
+          <none></none>
+          <string role="key" value="string"></string>
+          <list>
+           <instance class="exe.engine.lom.lomsubs.LangStringSub">
+            <dictionary>
+             <string role="key" value="language"></string>
+             <string value="es"></string>
+             <string role="key" value="valueOf_"></string>
+             <unicode value="OBJETIVOS: Conocer los fundamentos del Software Libre.
+Diferenciar el software libre del software propietario y del código abierto.
+Entender la utilidad del copyleft"></unicode>
+            </dictionary>
+           </instance>
+          </list>
+         </dictionary>
+        </instance>
+       </list>
        <string role="key" value="difficulty"></string>
        <none></none>
        <string role="key" value="intendedEndUserRole"></string>
-       <list></list>
+       <list>
+        <instance class="exe.engine.lom.lomsubs.intendedEndUserRoleSub">
+         <dictionary>
+          <string role="key" value="extensiontype_"></string>
+          <none></none>
+          <string role="key" value="source"></string>
+          <instance class="exe.engine.lom.lomsubs.sourceValueSub">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="string"></string>
+            <list></list>
+            <string role="key" value="uniqueElementName"></string>
+            <string value="source"></string>
+            <string role="key" value="valueOf_"></string>
+            <string value="LOM-ESv1.0"></string>
+           </dictionary>
+          </instance>
+          <string role="key" value="value"></string>
+          <instance class="exe.engine.lom.lomsubs.intendedEndUserRoleValueSub">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="source"></string>
+            <none></none>
+            <string role="key" value="uniqueElementName"></string>
+            <string value="value"></string>
+            <string role="key" value="value"></string>
+            <none></none>
+            <string role="key" value="valueOf_"></string>
+            <string value="learner"></string>
+           </dictionary>
+          </instance>
+         </dictionary>
+        </instance>
+       </list>
        <string role="key" value="interactivityLevel"></string>
        <none></none>
        <string role="key" value="interactivityType"></string>
@@ -897,7 +1640,42 @@ in order to gain resolution of the situation."></unicode>
         </instance>
        </list>
        <string role="key" value="learningResourceType"></string>
-       <list></list>
+       <list>
+        <instance class="exe.engine.lom.lomsubs.learningResourceTypeSub">
+         <dictionary>
+          <string role="key" value="extensiontype_"></string>
+          <none></none>
+          <string role="key" value="source"></string>
+          <instance class="exe.engine.lom.lomsubs.sourceValueSub">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="string"></string>
+            <list></list>
+            <string role="key" value="uniqueElementName"></string>
+            <string value="source"></string>
+            <string role="key" value="valueOf_"></string>
+            <string value="LOM-ESv1.0"></string>
+           </dictionary>
+          </instance>
+          <string role="key" value="value"></string>
+          <instance class="exe.engine.lom.lomsubs.learningResourceTypeValueSub">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="source"></string>
+            <none></none>
+            <string role="key" value="uniqueElementName"></string>
+            <string value="value"></string>
+            <string role="key" value="value"></string>
+            <none></none>
+            <string role="key" value="valueOf_"></string>
+            <string value="guided reading"></string>
+           </dictionary>
+          </instance>
+         </dictionary>
+        </instance>
+       </list>
        <string role="key" value="semanticDensity"></string>
        <none></none>
        <string role="key" value="typicalAgeRange"></string>
@@ -950,7 +1728,25 @@ in order to gain resolution of the situation."></unicode>
       <string role="key" value="coverage"></string>
       <list></list>
       <string role="key" value="description"></string>
-      <list></list>
+      <list>
+       <instance class="exe.engine.lom.lomsubs.descriptionSub">
+        <dictionary>
+         <string role="key" value="extensiontype_"></string>
+         <none></none>
+         <string role="key" value="string"></string>
+         <list>
+          <instance class="exe.engine.lom.lomsubs.LangStringSub">
+           <dictionary>
+            <string role="key" value="language"></string>
+            <string value="es"></string>
+            <string role="key" value="valueOf_"></string>
+            <string value="Las 4 libertades del software libre.\nHistoria.\ndiferencias entre el software libre, el software propietario y el codigo abierto.\nCopyleft"></string>
+           </dictionary>
+          </instance>
+         </list>
+        </dictionary>
+       </instance>
+      </list>
       <string role="key" value="identifier"></string>
       <list>
        <instance class="exe.engine.lom.lomsubs.identifierSub">
@@ -970,7 +1766,7 @@ in order to gain resolution of the situation."></unicode>
            <string role="key" value="uniqueElementName"></string>
            <string value="entry"></string>
            <string role="key" value="valueOf_"></string>
-           <unicode value="d183d8d1-14fa-4cad-a5f6-222d506d0eca"></unicode>
+           <unicode value="eadac6f6-d518-4a26-b993-84f47428c833"></unicode>
           </dictionary>
          </instance>
         </dictionary>
@@ -992,18 +1788,175 @@ in order to gain resolution of the situation."></unicode>
       <string role="key" value="structure"></string>
       <none></none>
       <string role="key" value="title"></string>
-      <none></none>
+      <instance class="exe.engine.lom.lomsubs.titleSub">
+       <dictionary>
+        <string role="key" value="extensiontype_"></string>
+        <none></none>
+        <string role="key" value="string"></string>
+        <list>
+         <instance class="exe.engine.lom.lomsubs.LangStringSub">
+          <dictionary>
+           <string role="key" value="language"></string>
+           <string value="es"></string>
+           <string role="key" value="valueOf_"></string>
+           <string value="Fundamentos del Software Libre"></string>
+          </dictionary>
+         </instance>
+        </list>
+        <string role="key" value="uniqueElementName"></string>
+        <none></none>
+       </dictionary>
+      </instance>
       <string role="key" value="uniqueElementName"></string>
       <string value="general"></string>
      </dictionary>
     </instance>
     <string role="key" value="lifeCycle"></string>
-    <none></none>
+    <instance class="exe.engine.lom.lomsubs.lifeCycleSub">
+     <dictionary>
+      <string role="key" value="contribute"></string>
+      <list>
+       <instance class="exe.engine.lom.lomsubs.contributeSub">
+        <dictionary>
+         <string role="key" value="date"></string>
+         <instance class="exe.engine.lom.lomsubs.dateSub" reference="22">
+          <dictionary>
+           <string role="key" value="dateTime"></string>
+           <instance class="exe.engine.lom.lomsubs.DateTimeValueSub">
+            <dictionary>
+             <string role="key" value="uniqueElementName"></string>
+             <string value="dateTime"></string>
+             <string role="key" value="valueOf_"></string>
+             <string value="2018-05-21T22:06:47.00-05:00"></string>
+            </dictionary>
+           </instance>
+           <string role="key" value="description"></string>
+           <instance class="exe.engine.lom.lomsubs.LanguageStringSub">
+            <dictionary>
+             <string role="key" value="extensiontype_"></string>
+             <none></none>
+             <string role="key" value="string"></string>
+             <list>
+              <instance class="exe.engine.lom.lomsubs.LangStringSub">
+               <dictionary>
+                <string role="key" value="language"></string>
+                <string value="es"></string>
+                <string role="key" value="valueOf_"></string>
+                <string value="Fecha de creaci\xc3\xb3n de los metadatos"></string>
+               </dictionary>
+              </instance>
+             </list>
+            </dictionary>
+           </instance>
+           <string role="key" value="extensiontype_"></string>
+           <none></none>
+           <string role="key" value="uniqueElementName"></string>
+           <none></none>
+           <string role="key" value="valueOf_"></string>
+           <none></none>
+          </dictionary>
+         </instance>
+         <string role="key" value="entity"></string>
+         <list>
+          <instance class="exe.engine.lom.lomsubs.entitySub" reference="23">
+           <dictionary>
+            <string role="key" value="extensiontype_"></string>
+            <none></none>
+            <string role="key" value="valueOf_"></string>
+            <string value="BEGIN:VCARD VERSION:3.0 FN:Miguel Esteban \xc3\x81lvarez Naranjo EMAIL;TYPE=INTERNET: ORG: END:VCARD"></string>
+           </dictionary>
+          </instance>
+         </list>
+         <string role="key" value="role"></string>
+         <instance class="exe.engine.lom.lomsubs.roleSub">
+          <dictionary>
+           <string role="key" value="extensiontype_"></string>
+           <none></none>
+           <string role="key" value="source"></string>
+           <instance class="exe.engine.lom.lomsubs.sourceValueSub" reference="24">
+            <dictionary>
+             <string role="key" value="extensiontype_"></string>
+             <none></none>
+             <string role="key" value="string"></string>
+             <list></list>
+             <string role="key" value="uniqueElementName"></string>
+             <string value="source"></string>
+             <string role="key" value="valueOf_"></string>
+             <string value="LOM-ESv1.0"></string>
+            </dictionary>
+           </instance>
+           <string role="key" value="uniqueElementName"></string>
+           <string value="role"></string>
+           <string role="key" value="value"></string>
+           <instance class="exe.engine.lom.lomsubs.roleValueSub">
+            <dictionary>
+             <string role="key" value="extensiontype_"></string>
+             <none></none>
+             <string role="key" value="source"></string>
+             <none></none>
+             <string role="key" value="uniqueElementName"></string>
+             <string value="value"></string>
+             <string role="key" value="value"></string>
+             <none></none>
+             <string role="key" value="valueOf_"></string>
+             <string value="author"></string>
+            </dictionary>
+           </instance>
+          </dictionary>
+         </instance>
+        </dictionary>
+       </instance>
+      </list>
+      <string role="key" value="status"></string>
+      <none></none>
+      <string role="key" value="uniqueElementName"></string>
+      <none></none>
+      <string role="key" value="version"></string>
+      <none></none>
+     </dictionary>
+    </instance>
     <string role="key" value="metaMetadata"></string>
     <instance class="exe.engine.lom.lomsubs.metaMetadataSub">
      <dictionary>
       <string role="key" value="contribute"></string>
-      <list></list>
+      <list>
+       <instance class="exe.engine.lom.lomsubs.contributeMetaSub">
+        <dictionary>
+         <string role="key" value="date"></string>
+         <reference key="22"></reference>
+         <string role="key" value="entity"></string>
+         <list>
+          <reference key="23"></reference>
+         </list>
+         <string role="key" value="role"></string>
+         <instance class="exe.engine.lom.lomsubs.roleSub">
+          <dictionary>
+           <string role="key" value="extensiontype_"></string>
+           <none></none>
+           <string role="key" value="source"></string>
+           <reference key="24"></reference>
+           <string role="key" value="uniqueElementName"></string>
+           <string value="role"></string>
+           <string role="key" value="value"></string>
+           <instance class="exe.engine.lom.lomsubs.roleValueSub">
+            <dictionary>
+             <string role="key" value="extensiontype_"></string>
+             <none></none>
+             <string role="key" value="source"></string>
+             <none></none>
+             <string role="key" value="uniqueElementName"></string>
+             <string value="value"></string>
+             <string role="key" value="value"></string>
+             <none></none>
+             <string role="key" value="valueOf_"></string>
+             <string value="creator"></string>
+            </dictionary>
+           </instance>
+          </dictionary>
+         </instance>
+        </dictionary>
+       </instance>
+      </list>
       <string role="key" value="identifier"></string>
       <list></list>
       <string role="key" value="language"></string>
@@ -1096,7 +2049,42 @@ in order to gain resolution of the situation."></unicode>
        </dictionary>
       </instance>
       <string role="key" value="copyrightAndOtherRestrictions"></string>
-      <none></none>
+      <instance class="exe.engine.lom.lomsubs.copyrightAndOtherRestrictionsSub">
+       <dictionary>
+        <string role="key" value="extensiontype_"></string>
+        <none></none>
+        <string role="key" value="source"></string>
+        <instance class="exe.engine.lom.lomsubs.sourceValueSub">
+         <dictionary>
+          <string role="key" value="extensiontype_"></string>
+          <none></none>
+          <string role="key" value="string"></string>
+          <list></list>
+          <string role="key" value="uniqueElementName"></string>
+          <string value="source"></string>
+          <string role="key" value="valueOf_"></string>
+          <string value="LOM-ESv1.0"></string>
+         </dictionary>
+        </instance>
+        <string role="key" value="uniqueElementName"></string>
+        <string value="copyrightAndOtherRestrictions"></string>
+        <string role="key" value="value"></string>
+        <instance class="exe.engine.lom.lomsubs.copyrightAndOtherRestrictionsValueSub">
+         <dictionary>
+          <string role="key" value="extensiontype_"></string>
+          <none></none>
+          <string role="key" value="source"></string>
+          <none></none>
+          <string role="key" value="uniqueElementName"></string>
+          <string value="value"></string>
+          <string role="key" value="value"></string>
+          <none></none>
+          <string role="key" value="valueOf_"></string>
+          <string value="creative commons: attribution - share alike"></string>
+         </dictionary>
+        </instance>
+       </dictionary>
+      </instance>
       <string role="key" value="cost"></string>
       <none></none>
       <string role="key" value="description"></string>
@@ -1118,16 +2106,7 @@ in order to gain resolution of the situation."></unicode>
   <string role="key" value="mxmlwidth"></string>
   <string value=""></string>
   <string role="key" value="resources"></string>
-  <dictionary>
-   <string role="key" value="db6fbea6ea756946efadfc349ef7a041"></string>
-   <list>
-    <reference key="8"></reference>
-   </list>
-   <string role="key" value="de47e53d4aeac0ec27fae728d1fd0336"></string>
-   <list>
-    <reference key="7"></reference>
-   </list>
-  </dictionary>
+  <dictionary></dictionary>
   <string role="key" value="root"></string>
   <reference key="3"></reference>
   <string role="key" value="scolinks"></string>

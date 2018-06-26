@@ -9,14 +9,14 @@
 
 
 {% block header %}
-                
+
 
             <div class="container">
               <a>
                   BIENVENIDO AL FORO
               </a>
-            
-              
+
+
           </div>
 {% endblock %}
 
@@ -61,7 +61,7 @@
 
 
 .transparent
-{ 
+{
    background:#7f7f7f;
    background:rgba(0,0,0.2,0.5);
 }
@@ -74,11 +74,13 @@
 <div class="container p-3 mb-2 transparent">
   <h1 style="color:white;"><strong>Participa en el foro</strong></h1>
 <div class="form-group p-3 mb-2 bg-dark text-white">
+  {% if not user.is_superuser %}
 <form method="post" enctype="multipart/form-data">
   {% csrf_token %}
   {{ form|crispy }}
   <button type="submit" class="button"><span>Comentar</span></button>
 </form>
+{% endif %}
 </div>
 
 </div>
@@ -99,6 +101,7 @@
 
   function inicio(){
     var id = '{{ id_oa }}';
+    var iduser='{{ user.id }}';
     $.ajax({
        data : {'id':id},
        url : '/oa/api/comentarios',
@@ -114,14 +117,20 @@
                     cabecera+='<div class="card-body"><img src="http://127.0.0.1:8000/media/'+data[i].fimg+'"class="img-responsive"/></div> ';
                  }
                  cabecera+=' <div class="card-footer p-3 mb-2 bg-info text-white"><strong>Publicado: </strong>'+data[i].fecha_comentario+'</div>';
+                  {% if user.is_superuser %}
+                     cabecera+='<a class="btn btn-danger" href="http://127.0.0.1:8000/oa/eliminar_comentario/'+data[i].id+'/'+id+'">Eliminar</a>'
+                  {% endif %}
+                  if (iduser==data[i].ida){
+                       cabecera+='<a class="btn btn-danger" href="http://127.0.0.1:8000/oa/eliminar_comentario/'+data[i].id+'/'+id+'">Eliminar</a>'
+                  }
 
                  html+=cabecera+'</div>';
          }
          $('#datos').html(html);
        }
     })
-    
-  }  
+
+  }
   window.onload=inicio;
 
 </script>

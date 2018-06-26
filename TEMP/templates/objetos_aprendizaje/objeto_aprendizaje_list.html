@@ -1,0 +1,55 @@
+{%extends 'base/base.html' %}
+
+{% block content %}
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<td>#</td>
+			<td>Nombre</td>
+			<td>Descripcion</td>
+			<td>Fecha creacion</td>
+			<td>Autor</td>
+			<td>Acciones</td>
+			
+		</tr>		
+	</thead>
+	<tbody>
+		
+		{% if object_list %}
+		{% for oa in object_list %}
+		<tr>
+			<td>{{ oa.id }}</td>
+			<td>{{ oa.nombre }}</td>
+			<td>{{ oa.descripcion }}</td>
+			<td>{{ oa.fecha_creacion }}</td>
+			<td>{{ oa.usuario.username }}</td>
+			<td>
+				<a class="btn btn-primary" href="{% url 'objetos_aprendizaje:oa_ver' oa.id %}">
+					Visualizar
+				</a>
+				<a class="btn btn-primary" href="{% url 'objetos_aprendizaje:oa_editar' oa.id %}">
+					Editar
+				</a>
+
+				<a class="btn btn-danger" href="{% url 'objetos_aprendizaje:oa_eliminar' oa.id %}">
+					Eliminar
+				</a>
+
+				<a class="btn btn-danger" href="{% url 'objetos_aprendizaje:oa_descargar' oa.id %}">
+					Descargar
+				</a>
+
+				<a class="btn btn-primary" href="{% url 'objetos_aprendizaje:oa_editar' oa.id %}">
+					Entrar en el Foro
+				</a>
+			</td>
+
+			
+		</tr>
+		{% endfor %}
+		{% else %}
+		<h1>No hay registros de Objetos de aprendizaje</h1>
+		{% endif %}
+	</tbody>
+</table>
+{% endblock %}

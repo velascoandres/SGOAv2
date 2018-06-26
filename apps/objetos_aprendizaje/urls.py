@@ -5,7 +5,7 @@ from apps.objetos_aprendizaje.views import *
 
 
 urlpatterns = [
-	
+
 	path('nuevo',oa_form_upload,name='oa_crear'),
 
 	path('listar',oa_list,name='oa_listar'),
@@ -20,10 +20,6 @@ urlpatterns = [
     path('busqueda',buscar,name='buscar'),
     path('busqueda_ajax/',BusquedaAjax.as_view(),name='buscar_ajax'),
     path('api/comentarios/',ComentarioAPI.as_view(),name="api"),
-    path('comentarios2/<int:id_oa>',Comentarios,name='comentario2_crear')
-] 
-"""
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-"""
+    path('comentarios2/<int:id_oa>',Comentarios,name='comentario2_crear'),
+    path('eliminar_comentario/<int:id_oa>/<int:id_co>/',comentario_delete,name='co_eliminar'),
+]

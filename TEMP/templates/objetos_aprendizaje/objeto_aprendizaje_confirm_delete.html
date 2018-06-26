@@ -1,0 +1,12 @@
+{% extends 'base/base.html' %}
+
+{%block content %}
+<form method="post">
+	
+	<h3>Desea eliminar el registro de {{ object.nombre }}</h3>
+	{% csrf_token %}
+	<button class="btn btn-danger" type="submit">Si, eliminar</button>
+	{% csrf_token %}
+	<a class="btn btn-default" href="{% url 'objetos_aprendizaje:oa_listar' %}">Cancelar</a>
+</form>
+{% endblock %}

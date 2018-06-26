@@ -1,0 +1,80 @@
+{%extends 'base.html' %}
+{% load static %}
+
+{% block gestor %}
+{% endblock %}
+
+ {% block estilo %}
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <link rel="stylesheet" type="text/css" href="{% static 'css/profesores.css' %}">
+ {% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block table %}
+
+{% block header %}
+                <a>
+                  GESTION DE ESTUDIANTES
+                  <span class="icon-feather" data-toggle="tooltip" data-placement="right" title="Teacher profile"></span>
+                </a>
+ {% endblock %}
+<table class="table table-dark">
+	<thead>
+		<tr>
+			<td>#idUsuario</td>
+			<td>Nombre</td>
+			<td>Apellido</td>
+			<td>Email</td>
+			<td>Facultad</td>
+			<td>Activo</td>
+			<td>Acciones</td>
+			
+		</tr>		
+	</thead>
+	<tbody>
+		
+		{% if object_list %}
+		{% for usuario in object_list %}
+		<tr>
+			
+			<td>{{ usuario.user.id }}</td>
+			<td>{{ usuario.nombre }}</td>
+			<td>{{ usuario.apellido }}</td>
+			<td>{{ usuario.user.email }}</td>
+			<td>{{ usuario.departamento }}</td>
+			<td>{{ usuario.user.is_active }}</td>
+			<td>
+				{% if usuario.user.is_active %}
+				<a id="{{ usuario.id }}" class="btn btn-primary" href="{% url 'usuarios:desactivar' usuario.user.id %}">
+					Desactivar
+				</a>
+				{% else %}
+				<a id="{{ usuario.id }}" class="btn btn-primary" href="{% url 'usuarios:activar' usuario.user.id %}">
+					Activar
+				</a>
+				{% endif %}
+				<a class="btn btn-danger" href="">
+					Eliminar
+
+			</td>
+
+			
+		</tr>
+		{% endfor %}
+	
+		{% else %}
+		<h1>No hay registros de Estudiantes</h1>
+		{% endif %}
+	</tbody>
+
+{% block sc %}
+{% endblock %} 
+
+</table>
+{% endblock %}
+

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{%block content %}
+<form method="post">
+
+	<h3>Desea eliminar el comentario</h3>
+	{% csrf_token %}
+	<button class="btn btn-danger" type="submit">Si, eliminar</button>
+	{% csrf_token %}
+	<a class="btn btn-default" href="{% url 'objetos_aprendizaje:comentario2_crear' ida %}">Cancelar</a>
+</form>
+{% endblock %}
