@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body{
+background: #BFDCDF;
+
+}
+
+.wrap{
+    width: 1000px;
+    margin:auto;
+    margin-top: 100px;
+
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  transition: 0.4 s;
+  width: 300px;
+  background: #fff;
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+  font-family: arial;
+  float:left;
+  margin: 10px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center">Manual de Usuario</h2>
+
+<div id= "lista">
+
+    <p><a href="informacionOA.html">Informacion de OAs</a></p>
+    <p><a href="login.html">Login</a></p>
+    <p><a href="estudiante.html">Registrar como estudiante</a></p>
+    <p><a href="profesor.html">Registrar como profesor</a></p>
+    <p><a href="Menu OA.html">Menu OA</a></p>
+        <p><a href="Crear OA.html">Crear OA</a></p>
+    <p><a href="linkexe.html">Link eXeLearning </a></p>
+
+
+  
+</div>  
+
+
+<button id="button" href="{% url 'home' %}"> Regresar</button>
+
+</body>
+</html>
